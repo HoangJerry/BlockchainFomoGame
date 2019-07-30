@@ -1,0 +1,134 @@
+<div id="player-table">
+    <h1>Players</h1>
+    <div class="row" id="table-top">
+        <div class="col-sm-6" id="view-size">
+            <div class="dabanking-part1">
+                <label>Show</label>
+                <select id="entry-quantity" (change)="onChangeEntry()">
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+            </select>
+                <label>entries</label>
+            </div>
+            <!-- <div class="dabanking-part2" id="export-part">
+                <label id="download-label">Download</label>
+                <a href="#">CSV</a>
+                <a id="export-excel" href="#">Excel</a>
+            </div> -->
+        </div>
+        <div class="col-sm-6" id="search-part">
+            <input [(ngModel)]="searchText" id="search-input" (keyup.enter)="onClickSearch()" type="text" name="seach" placeholder="USERNAME/ADDRESS">
+            <i class="fa fa-search" (click)="onClickSearch()"></i>
+        </div>
+    </div>
+    <div id="table-container">
+        <table id="json-table" class="table table-striped">
+            <thead>
+                <tr>
+                    <th title="no" style="line-height: 38px">No
+
+                    </th>
+                    <th title="username">Username
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                    <th title="address">Address
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                    <th title="tickets">Tickets
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                    <th title="ethBuyTicket">ETH<br>Buy Ticket
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                    <th title="ethPlayGame">ETH<br>Play Game
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                    <th title="totalMinedToken">Total Mined Token
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                    <th title="timeInvested" width="200px">Time Invested
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                    <th title="ticketTotalIncome">Total Ticket  Income
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                    <th title="gameTotalIncome">Total Game Income
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                    <th title="totalWithdrawal">Total Withdrawal
+                        <div>
+                            <a><i class="fa fa-search"></i></a>
+                            <a><i class="fa fa-caret-up"></i></a>
+                            <a><i class="fa fa-caret-down"></i></a>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let item of filterDatas |slice: (page-1) * pageSize : (page-1) * pageSize + pageSize;let i =index">
+                    <tr>
+                        <td>{{i+1}}</td>
+                        <td>{{item.username}}</td>
+                        <td><a style="color: #2ee2ba; text-decoration: none;" target="_blank" href="https://ropsten.etherscan.io/address/{{item.citizen}}">{{item.citizen}}</a></td>
+                        <td>{{item.tickets}}</td>
+                        <td>{{item.ethBuyTicket | ethDisplay}}</td>
+                        <td>{{item.ethPlayGame | ethDisplay}}</td>
+                        <td>{{item.totalMinedToken | ethDisplay}}</td>
+                        <td>{{item.timeInvested | date}}</td>
+                        <td>{{item.ticketTotalIncome | ethDisplay}}</td>
+                        <td>{{item.gameTotalIncome | ethDisplay}}</td>
+                        <td>{{item.totalWithdrawal | ethDisplay}}</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+    <div class="spacer"></div>
+    <div>
+        <!-- <label id="index-label">Showing {{(page-1)*pageSize}} to {{(page-1) * pageSize + pageSize}} of {{datas.length}} entries</label> -->
+
+        <ngb-pagination [collectionSize]="filterDatas.length" [pageSize]="pageSize" [maxSize]="3" [(page)]="page" class="d-flex justify-content-end"></ngb-pagination>
+
+    </div>
+    <footer id="dabanking-footer">
+        <p>&copy;2019 DABANKING. All Rights Reserved</p>
+    </footer>
+</div>

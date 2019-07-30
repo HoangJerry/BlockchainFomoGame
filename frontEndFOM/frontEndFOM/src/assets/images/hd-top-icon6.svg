@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
+	<defs>
+		<image width="35" height="35" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAAAXNSR0IB2cksfwAAAZtQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////LHKW/AAAAIl0Uk5TAAQQQIOv0OHr4tKwhEQRBQsieNX/2H4lmxJt4/v66nQW/rEVMrf4yaaSi5GlyPfAOO6qQdn2gDYIB8b1S+2kUN3bdw/ouA0uMTO13vSgGz/M1hnCFDBOdgHsnBhGK9zpI/MfR3MCs01Kf0XRfcsnjPH9Hs/OKrLHAyiFKavkPUMvdcOnNLbgvyQZ8wH1AAACPUlEQVR4nIWU/VsSQRDHByPgQo+sESNQQUjAQMk3VEjNV1BKo1JSMAt6QdRetNTekKKXP7vZW45bDp6n+eFuvrOf252dnT2AuhnaLhkvm8wW6Yq1vUO2aQNwVSU6r11Hzbrs3Rp1w6G8HDedfNDV4+JOb59bZTz9Xnr6brHwgNMfCA7eDoWlISaHIzXmDo54YXSMQuP+ieikEpvy2adjFDHHOXMXcWZ2jgL35mUhzYU+9tliXGWQZbAUVeTySmJlWfGSqxRdi6oMYur+A/79+sbDjXXupgM08OhxnTE/qa2xSWKz5qeXSGxlAJ7yebZ3eDybwlRWTSq3i/hsD+B5rWgjL5Rwnph8PfMC7c7+EsbVyr7qbGbkMOKuDKN5bq/fuJsZKFIxO0BnOsZHJ9T+H8ZAi/W3YvYFHfJgqQUTmxV00IUSbE0cZIVYnHZ7eKTptz1ogXf4fltgPhxTGU40SJnHhJ4ZcbGjE4JKH1UZYPl8Qjw9E6FzNtNxggubsq/PiM5EQ9pfTAR95X7yG6vPPuKQvXFv5yY8/M5dqrOnDDKdbVhuhC4CtU6W/dSfMpwVEWMFaG0Vfu6w10tnm2uJ5OZ4/0BmnnVzugWi9GElw1zvD3IDzdDOT7WfyaJrJFaTOqT6q34vmMUXSY5VFgSirSLcLw6ZKRCbLlanFDlZLZ6ye/pbQAAiw8p9l/yh4GAw5JcGmPwTgQZzF3r1/42CW78LW7e9S/z/HPy16RFGOcpGa0mySCWrsewwaAP/ADkDbZTUVDRxAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="HEADER">
+		<use id="Layer 56" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+	</g>
+</svg>

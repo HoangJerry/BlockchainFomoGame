@@ -1,0 +1,2522 @@
+body{
+  font-family: 'Work Sans', sans-serif;
+  background: url(images/bg2.jpg) #14181a no-repeat center top;
+}
+/*headerContainer*/
+.headerContainer{
+  width: 100%;
+  overflow: hidden;
+  background: #242525;
+  border-bottom: 1px solid #405763;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0px 16px 21px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 16px 21px -15px rgba(0,0,0,0.75);
+  box-shadow: 0px 16px 21px -15px rgba(0,0,0,0.75);
+  z-index: 999;
+}
+.headerBotContainer{
+    width: 100%;
+    background: #242525;
+    padding: 0;
+    overflow: hidden;
+}
+.headerBotContainer #logo{
+    width: 24.5%;
+    float: left;
+    margin: 0;
+    display: inline-block;
+    padding: 15px 0 0;
+}
+.headerBotContainer #logo img{
+    width: auto;
+    height: auto;
+}
+.ctn-container{
+  width: 100%;
+}
+.navbar-dark .navbar-nav>li>a{
+  font-weight: normal;
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 6px;
+  text-align: center;
+  padding: 0px 5px;
+  line-height: 38px;
+  float: left;
+  /*text-transform: uppercase;*/
+}
+.navbar-dark .navbar-nav>li>a:hover, .navbar-dark .navbar-nav>li>a:focus, .navbar-dark .navbar-nav>li>a:active {
+  opacity: 0.3;
+  color: #fff;
+}
+.navbar-dark .navbar-nav>li>a:active {
+  background: #151c1f;
+}
+.navloginRight{
+  float: right;
+  display: inherit;
+}
+.navloginRight a#login{
+  padding: 0 20px;
+  line-height: 35px;
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 20px 10px 0;
+  background: #ff5454;
+  border: 1px solid #ffa05a;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 700;
+  float: right;
+}
+.navloginRight a#signup{
+  padding: 1px 21px;
+  float: right;
+  text-decoration: none;
+  line-height: 37px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.navloginRight a#signup:hover{
+  padding: 0 20px;
+  background: #ff5454;
+  border: 1px solid #ffa05a;
+}
+.navloginRight a#login:hover{
+  opacity: 0.5;
+}
+.navbar-dark .navbar-collapse{
+  border: 0;
+}
+.wrapper{
+  width: 100%;
+  margin-top: 80px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contentRoundTop{
+  width: 100%;
+  background: url(images/ctn-bg1.png) transparent no-repeat center;
+  background-size: 100% 100%;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.buyticket{
+  width: 100%;
+  position: relative;
+  background: 
+    linear-gradient(135deg, transparent 10px, #ff5353 0) top left,
+    linear-gradient(225deg, transparent 10px, #ff5353 0) top right,
+    linear-gradient(315deg, transparent 10px, #ff5353 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #ff5353 0) bottom left;
+
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#ff9f5a, #ff9f5a), linear-gradient(#ff9f5a, #ff9f5a), 
+                  linear-gradient(#ff9f5a, #ff9f5a), linear-gradient(#ff9f5a, #ff9f5a), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 2px), #ff9f5a calc(50% - 2px), #ff9f5a calc(50% + 2px), #ff5353 calc(50% + 2px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 2px), #ff9f5a calc(50% - 2px), #ff9f5a calc(50% + 2px), #ff5353 calc(50% + 2px)), 
+                  linear-gradient(to top right, transparent calc(50% - 2px), #ff9f5a calc(50% - 2px), #ff9f5a calc(50% + 2px), #ff5353 calc(50% + 2px)), 
+                  linear-gradient(to top left, transparent calc(50% - 2px), #ff9f5a calc(50% - 2px), #ff9f5a calc(50% + 2px), #ff5353 calc(50% + 2px)), 
+                  
+                  linear-gradient(#ff5353, #ff5353), 
+                  linear-gradient(#ff5353, #ff5353), 
+                  linear-gradient(#ff5353, #ff5353), 
+                  linear-gradient(#ff5353, #ff5353);
+  background-size: 4px calc(100% - 30px), 4px calc(100% - 30px), calc(100% - 30px) 4px,calc(100% - 30px) 4px,
+                /*Cac goc*/
+                 15px 15px,15px 15px,15px 15px,15px 15px,
+                 /*Tap nen*/
+                 calc(100% - 30px) 60%,calc(100% - 30px) 60%, 60% calc(100% - 30px),60% calc(100% - 30px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+
+}
+#navbarSupportedContentLG ul li a{
+  margin: 0;
+  padding: 45px 20px 0;
+}
+#navbarSupportedContentLG {
+  padding-left: 0;
+  padding-right: 0;
+}
+#navbarSupportedContentLG ul {
+  width: 100%;
+}
+#navbarSupportedContentLG ul #bar-li-1 a {
+  background: url("images/hd-top-icon1.png") #151c1f no-repeat center top 10px;
+  color: #2ee2ba;
+}
+#navbarSupportedContentLG ul #bar-li-2 a {
+  background: url("images/hd-top-icon2.png") no-repeat center top 10px;
+  color: #2ee2ba;
+}
+
+#navbarSupportedContentLG ul #bar-li-3 a {
+  background: url("images/hd-top-icon3.png") no-repeat center top 10px;
+  color: #2ee2ba;
+}
+#navbarSupportedContentLG ul #bar-li-4 a {
+  background: url("images/hd-top-icon4.png") no-repeat center top 10px;
+  color: #2ee2ba;
+}
+#navbarSupportedContentLG ul #bar-li-5 a {
+  background: url("images/hd-top-icon5.png") no-repeat center top 10px;
+}
+#navbarSupportedContentLG ul #bar-li-6 a {
+  background: url("images/hd-top-icon6.png") no-repeat center top 10px;
+}
+#navbarSupportedContentLG ul #bar-li-7 a {
+  background: url("images/hd-top-icon7.png") no-repeat center top 10px;
+}
+#navbarSupportedContentLG ul #bar-li-8 a {
+  background: url("images/hd-top-icon8.png") no-repeat center top 10px;
+}
+
+
+#navbarSupportedContentLG ul #bar-li-10 {
+  float: right;
+}
+#navbarSupportedContentLG ul #bar-li-9 {
+  float: right;
+}
+
+.myWrapper {
+}
+.titleCenter {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+.parentContentLeft {
+  display: inline-block;
+  /* margin: 0 -15px 0px -30px; */
+  padding-top: 20px;
+  background-color: #252b2e;
+  background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(125,185,232,0) 100%);
+}
+.contentLeft #playerTitle {
+  float: left;
+  color: #ffffff;
+}
+.contentLeft #payOutTitle {
+  float: right;
+  color: #ffffff;
+}
+.contentLeft #underTitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+}
+.contentLeft ul {
+  list-style-type: none;
+  padding: 0;
+}
+.contentLeft ul::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+} 
+#navbarSupportedContentLG::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+} 
+
+.contentLeft ul li {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+}
+#playerRanking li .playerName {
+  float: left;
+  color: #bb64e2;
+}
+#playerRanking li .playerNameOne {
+  color: #e9af01;
+  font-weight: 700;
+}
+#playerRanking li .payOutValue {
+  float: right;
+  color: #2ee2ba;
+}
+.playerName span {
+  color: #e9af01;
+  display: inline-block;
+  width: 30px;
+}
+.playerName img {
+  width: 20px;
+  margin-top: -7px;
+}
+#firstRank{
+  color: #e9af01;
+  background: url("images/hd-left-icon1.png") no-repeat;
+  background-size: contain;
+}
+#secondRank{
+  background: url("images/hd-left-icon2.png") no-repeat;
+  background-size: contain;
+}
+#thirdRank{
+  background: url("images/hd-left-icon3.png") no-repeat;
+  background-size: contain;
+}
+.parentContentRight {
+  padding-top: 40px;
+  padding-left: 74px;
+}
+.contentRoundTop div p {
+  text-align: center;
+}
+.contentRoundTop div p span {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+}
+.contentRoundTop div p span:first-child {
+  color: #2ee2ba;
+}
+#clock1Span {
+  background: url(images/ctn-rou-icon3.png) no-repeat;
+  padding-left: 60px;
+  padding-bottom: 10px;
+  background-size: contain;
+}
+#clock2Span {
+  color: #cf9f0b;
+  font-size: 50px;
+  background: url(images/ctn-rou-icon4.png) no-repeat;
+  padding-left: 70px;
+  padding-bottom: 10px;
+  background-size: contain;
+}
+#key1Span{
+  background: url(images/ctn-rou-icon1.png) no-repeat;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  background-size: contain;
+}
+#key2Span{
+  background: url(images/ctn-rou-icon2.png) no-repeat;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  background-size: contain;
+}
+.buyticket div #buyTicketHeader {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  line-height: 56px;
+}
+.buyticket #x1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  background: url("images/key-icon1.png") no-repeat left top 18px;
+  padding-left: 40px;
+  width: fit-content;
+  margin: 0 auto;
+}
+#round1Top {
+  margin-left: -15px;
+}
+#round1Top p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2ee2ba;
+  background-color: #252b2e;
+  width: fit-content;
+  margin: 0 auto;
+  border: 2px solid #2ee2ba;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  padding: 0 45px;
+}
+#round1Mid {
+  margin: 0;
+  margin-top: 50px;
+  margin-left: -15px;
+  margin-right: 15px;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2ee2ba;
+  text-align: center;
+  background: url("images/bg-radius2.png") no-repeat top center;
+  background-size: 100% 100%;
+}
+.contentRoundMid {
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+  margin-right: 15px;
+  background-color: #252b2e;
+}
+.contentRoundMid:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 20px solid #14181b;
+    border-left: 20px solid #252b2e;
+    width: 0;
+}
+.contentRoundMid:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 20px solid #14181b;
+    border-right: 20px solid #252b2e;
+    width: 0;
+}
+.contentRoundMid #round1Left {
+  padding-left: 15px;
+}
+.round1Row {
+  padding: 10px 0;
+}
+.contentRoundMid h1#round1Mid {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2ee2ba;
+  text-align: center;
+  background: url("images/bg-radius2.png") no-repeat top center;
+  background-size: 100% 100%;
+  padding: 10px 0;
+  margin: 0;
+}
+.chest {
+  padding-left: 135px;
+}
+#chest1 {
+  background: url(images/chest_01.png) no-repeat;
+  background-size: 75px;
+}
+#chest2 {
+  background: url(images/chest_02.png) no-repeat;
+  background-size: 75px;
+}
+#chest3 {
+  background: url(images/chest_03.png) no-repeat;
+  background-size: 70px;
+}
+#chest4 {
+  background: url(images/chest_04.png) no-repeat;
+  background-size: 75px;
+}
+.round-mid-left {
+  display: block;
+  float: left;
+}
+.round-mid-left h1 {
+  color: #2ee2ba;
+  font-size: 34px;
+  font-weight: bold;
+}
+.round-mid-left h1#megaChest {
+  color: #df4d4d;
+}
+.round-mid-left h1#grandChest {
+  color: #ffc000;
+}
+.round-mid-left p {
+  color: #ffffff;
+}
+.round-mid-right {
+  display: block;
+  float: right;
+}
+.round-mid-right h1 {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: bold;
+}
+.round-mid-right p {
+  color: #2ee2ba;
+  float: right;
+}
+.round-mid-right p img{
+  margin-right: 8px;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #3b4449;
+    margin: 10px 0;
+}
+#kingOfKey {
+  position: relative;
+  border: 2px solid #ffd200;
+  border-radius: 4px;
+  background: url("images/bg-ctn.jpg") transparent no-repeat center;
+  background-size: cover;
+}
+#kingOfKey h1 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff8400;
+}
+.close{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+#kingOfKey a.questionIcon {
+  position: absolute;
+  top: 50px;
+  right: 8px;
+}
+#kingOfKey h2 {
+  margin: 0;
+  margin-top: 10px;
+  padding: 10px;
+  padding-top: 70px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffbf00;
+  background: url("images/ctn-conten-icon6.png") no-repeat top center;
+}
+#kingOfKey p {
+  color: #2ee2ba;
+  text-align: center;
+}
+#masterKey {
+  background-color: #151c1f;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 30px 10px;
+  position: relative;
+}
+#masterKey a.questionIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+#masterKey .tab-content {
+  padding-top: 20px;
+}
+
+#masterKey .card-header-tabs .active {
+  background: #11896e;
+}
+
+#masterKeyHeader {
+  width: 80%;
+  margin: 0 auto;
+}
+#masterKeyHeader .nav-tabs {
+  border-bottom: 0;
+}
+#masterKeyHeader .nav-tabs li{
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#masterKeyHeader .nav-tabs li a {
+  margin-right: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  border: 1px solid #405763;
+  color: #fff;
+  padding: 10px 0;
+  background: #252b2e;
+}
+#masterKeyHeader .nav-tabs li a:hover {
+  background-color: #11896e;
+  color: #fff;
+  font-weight: 700;
+}
+ul#masterKeyList {
+  list-style-type: none;
+  padding: 15px;
+}
+ul#masterKeyList li .keyName {
+  float: left;
+  color: #bb64e2;
+}
+li:first-child .keyName {
+  color: #ffbf00 !important; 
+  font-weight: bold;
+}
+.keyName img {
+  width: 15px;
+}
+.keyName span {
+  display: inline-block;
+  width: 30px;
+}
+ul#masterKeyList li .keyValue {
+  float: right;
+  color: #2ee2ba;
+}
+.contentBottom {
+  margin: 20px;
+  margin-left: -15px;
+  margin-right: 15px;
+  text-align: center;
+}
+.contentBottom #resultModal {
+  font-weight: bold;
+  border: 1px solid #1cc09b;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: #11896e;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+}
+.contentBottom > div > div > h1 {
+ font-size: 34px;
+ font-weight: bold;
+ color: #ffffff;
+ margin-top: 20px;
+ padding: 10px 0;
+  /*background-color: #252b2e;*/
+  position: relative;
+  width: 100%;
+  background: 
+    linear-gradient(135deg, transparent 10px, #ff3f90 0) top left,
+    linear-gradient(225deg, transparent 10px, #ff3f90 0) top right,
+    linear-gradient(315deg, transparent 10px, #ff3f90 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #ff3f90 0) bottom left;
+
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#ff5ade, #ff5ade), linear-gradient(#ff5ade, #ff5ade), 
+                  linear-gradient(#ff5ade, #ff5ade), linear-gradient(#ff5ade, #ff5ade), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 2px), #ff5ade calc(50% - 2px), #ff5ade calc(50% + 2px), #ff3f90 calc(50% + 2px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 2px), #ff5ade calc(50% - 2px), #ff5ade calc(50% + 2px), #ff3f90 calc(50% + 2px)), 
+                  linear-gradient(to top right, transparent calc(50% - 2px), #ff5ade calc(50% - 2px), #ff5ade calc(50% + 2px), #ff3f90 calc(50% + 2px)), 
+                  linear-gradient(to top left, transparent calc(50% - 2px), #ff5ade calc(50% - 2px), #ff5ade calc(50% + 2px), #ff3f90 calc(50% + 2px)), 
+                  
+                  linear-gradient(#ff3f90, #ff3f90), 
+                  linear-gradient(#ff3f90, #ff3f90), 
+                  linear-gradient(#ff3f90, #ff3f90), 
+                  linear-gradient(#ff3f90, #ff3f90);
+  background-size: 4px calc(100% - 30px), 4px calc(100% - 30px), calc(100% - 30px) 4px,calc(100% - 30px) 4px,
+                /*Cac goc*/
+                 15px 15px,15px 15px,15px 15px,15px 15px,
+                 /*Tap nen*/
+                 calc(100% - 30px) 60%,calc(100% - 30px) 60%, 60% calc(100% - 30px),60% calc(100% - 30px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+}
+
+
+.contentRoundBot {
+  margin-right: 0;
+}
+.Round-bot-Left {
+  /*background-color: #252b2e;*/
+  position: relative;
+  width: 100%;
+  background: 
+    linear-gradient(135deg, transparent 10px, #252b2e 0) top left,
+    linear-gradient(225deg, transparent 10px, #252b2e 0) top right,
+    linear-gradient(315deg, transparent 10px, #252b2e 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #252b2e 0) bottom left;
+
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), 
+                  linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), 
+                  linear-gradient(to top right, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), 
+                  linear-gradient(to top left, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), 
+                  
+                  linear-gradient(#252b2e, #252b2e), 
+                  linear-gradient(#252b2e, #252b2e), 
+                  linear-gradient(#252b2e, #252b2e), 
+                  linear-gradient(#252b2e, #252b2e);
+  background-size: 2px calc(100% - 30px), 2px calc(100% - 30px), calc(100% - 30px) 2px,calc(100% - 30px) 2px,
+                /*Cac goc*/
+                 15px 15px,15px 15px,15px 15px,15px 15px,
+                 /*Tap nen*/
+                 calc(100% - 30px) 60%,calc(100% - 30px) 60%, 60% calc(100% - 30px),60% calc(100% - 30px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+
+}
+.Round-bot-Left .questionIcon-part1 {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+}
+#roundBotLeftHeader{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/*#roundBotLeftHeader:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-top: 10px solid #14181a;
+    border-left: 10px solid #252b2e;
+    width: 0;
+    z-index: 99;
+}
+#roundBotLeftHeader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 0;
+    border-left: 0;
+    border-top: 10px solid #14181a;
+    border-right: 10px solid #252b2e;
+    width: 0;
+}*/
+#roundBotLeftHeader .nav-tabs {
+  border-bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+#roundBotLeftHeader .nav-tabs li{
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  margin-bottom: 0;
+  
+}
+#roundBotLeftHeader .nav-tabs li a {
+  margin-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  box-sizing: border-box;
+  border: 2px solid #405763;
+  border-radius: 0;
+  color: #fff;
+  padding: 8px 0;
+  background: #252b2e;
+  
+}
+#roundBotLeftHeader .nav-tabs li:first-child a {
+  margin-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  border: 0px solid #405763;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 0;
+  /*background: #252b2e;*/
+  background:
+    linear-gradient(135deg, transparent 10px, #252b2e 0) top left,
+    linear-gradient(225deg, transparent 0px, #252b2e 0) top right,
+    linear-gradient(315deg, transparent 0px, #252b2e 0) bottom right,
+    linear-gradient(45deg,  transparent 0px, #252b2e 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(to bottom right, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), linear-gradient(#252b2e, #252b2e), linear-gradient(#252b2e, #252b2e);
+  background-size: 2px 100%, 2px 100%, 100% 2px,100% 2px, 15px 15px, 100% 100%, 100% 100%;;
+  background-position: 0% 15px, 100% 100%, 15px 0%, 0px 100%, 0% 0%, 15px 0%, 100% 15px;
+}
+#roundBotLeftHeader .nav-tabs li:last-child a {
+  margin-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  border: 0px solid #405763;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 0;
+  background:
+    linear-gradient(135deg, transparent 0px, #252b2e 0) top left,
+    linear-gradient(225deg, transparent 0px, #252b2e 0) top right,
+    linear-gradient(315deg, transparent 0px, #252b2e 0) bottom right,
+    linear-gradient(45deg,  transparent 0px, #252b2e 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(to bottom left, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), linear-gradient(#252b2e, #252b2e), linear-gradient(#252b2e, #252b2e);
+  background-size: 2px 100%, 2px 100%, 100% 2px, 100% 2px, 15px 15px, 100% 100%, 100% 100%;
+  background-position: 0% 0%, 100% 15px, -15px 0%, 0px 100%, 100% 0%, -15px 0%, 100% 15px;
+}
+#roundBotLeftHeader .nav-tabs li a:hover {
+  background-color: #11896e;
+  color: #252b2e;
+  border: 2px solid #1cc09b;
+}
+#roundBotLeftHeader .nav-tabs li a.active {
+  background-color: #11896e;
+  color: #252b2e;
+  border: 2px solid #1cc09b;
+}
+#roundBotLeftHeader .nav-tabs li:first-child a.active{
+  border:none;
+  color: #252b2e;
+  background-color: transparent;
+  background-image: linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(to bottom right, transparent calc(50% - 1px), #1cc09b calc(50% - 1px), #1cc09b calc(50% + 1px), #11896e calc(50% + 1px)), linear-gradient(#11896e, #11896e), linear-gradient(#11896e, #11896e);
+  background-size: 2px 100%, 2px 100%, 100% 2px,100% 2px, 15px 15px, 100% 100%, 100% 100%;;
+  background-position: 0% 15px, 100% 100%, 15px 0%, 0px 100%, 0% 0%, 15px 100%, 100% 15px;
+}
+#roundBotLeftHeader .nav-tabs li:first-child a:hover{
+  border:none;
+  color: #252b2e;
+  background-color: transparent;
+  background-image: linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(to bottom right, transparent calc(50% - 1px), #1cc09b calc(50% - 1px), #1cc09b calc(50% + 1px), #11896e calc(50% + 1px)), linear-gradient(#11896e, #11896e), linear-gradient(#11896e, #11896e);
+  background-size: 2px 100%, 2px 100%, 100% 2px,100% 2px, 15px 15px, 100% 100%, 100% 100%;;
+  background-position: 0% 15px, 100% 100%, 15px 0%, 0px 100%, 0% 0%, 15px 100%, 100% 15px;
+}
+#roundBotLeftHeader .nav-tabs li:last-child a:hover  {
+  color: #252b2e;
+  border:none;
+  background-color: transparent;
+  background-image: linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(to bottom left, transparent calc(50% - 1px), #1cc09b calc(50% - 1px), #1cc09b calc(50% + 1px), #11896e calc(50% + 1px)), linear-gradient(#11896e, #11896e), linear-gradient(#11896e, #11896e);
+  background-size: 2px 100%, 2px 100%, 100% 2px, 100% 2px, 15px 15px, 100% 100%, 100% 100%;
+  background-position: 0% 0%, 100% 15px, -15px 0%, 0px 100%, 100% 0%, -15px 0%, 100% 15px;
+}
+#roundBotLeftHeader .nav-tabs li:last-child a.active  {
+  color: #252b2e;
+  border:none;
+  background-color: transparent;
+  background-image: linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(to bottom left, transparent calc(50% - 1px), #1cc09b calc(50% - 1px), #1cc09b calc(50% + 1px), #11896e calc(50% + 1px)), linear-gradient(#11896e, #11896e), linear-gradient(#11896e, #11896e);
+  background-size: 2px 100%, 2px 100%, 100% 2px, 100% 2px, 15px 15px, 100% 100%, 100% 100%;
+  background-position: 0% 0%, 100% 15px, -15px 0%, 0px 100%, 100% 0%, -15px 0%, 100% 15px;
+}
+
+.Round-bot-Left h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2ee2ba;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.roundBotLeftBodyTop {
+  /* padding: 0 15px; */
+  margin: 0 auto;
+  border-radius: 4px;
+  color: #ffffff;
+  text-align: center;
+}
+.roundBotLeftBodyTop .input-group input{
+  background: #000;
+  border: 1px solid #405763;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 3px;
+  height: 40px;
+  text-align: center;
+}
+.roundBotLeftBodyTop .input-group span.input-addon-part1 img{
+  width: 30px;
+  margin-top: 8px;
+  margin-bottom: -12px;
+}
+
+.roundBotLeftBodyTop .input-group span.input-addon-part1{
+  border: 1px solid #405763;
+  border-radius: 5px 0 0 5px;
+  height: 40px;
+  border-right: 0;
+  background: #141b1e;
+}
+.roundBotLeftBodyTop .input-group span.input-addon-part2{
+    border: 1px solid #405763;
+    border-radius: 0 5px 5px 0;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    border-left: 0;
+    background: #141b1e;
+}
+#keyQuantity {
+  background-color: #000000;
+  font-weight: bold;
+}
+.roundBotLeftBodyBottom {
+  width: 100%;
+  padding: 10px 0 30px;
+  overflow: hidden;
+  text-align: center;
+}
+.roundBotLeftBodyBottom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.roundBotLeftBodyBottom ul li{
+  width: 20%;
+  float: left;
+}
+.roundBotLeftBodyBottom ul li a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 0;
+  border: 1px solid #1cc09b;
+  background: #11896e;
+}
+.roundBotLeftBodyBottom ul li a.BodyBottom-part1{
+  border-radius: 5px 0 0 5px;
+}
+.roundBotLeftBodyBottom ul li a.BodyBottom-part2{
+  border-radius: 0 5px 5px 0;
+}
+#sendETHBackground {
+  width: 100%;
+}
+#sendETHBackground a{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 7px 0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  border: 2px solid #ffa05a;
+  border-radius: 4px;
+  background: #ff5454;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+}
+#sendETHBackground a img{
+  margin-right: 15px;
+  width: 30px;
+}
+.border-diagonal{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+/*.border-diagonal:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 10px solid #14181a;
+    border-left: 10px solid #252b2e;
+    width: 0;
+}
+.border-diagonal:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 10px solid #14181a;
+    border-right: 10px solid #252b2e;
+    width: 0;
+}*/
+#roundBotLeftBody > p {
+  color: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+#roundBotLeftBody .modal .modal-lg {
+  width: 500px;
+  margin-top: 120px;
+}
+.ctn-colorbackgrour{
+  padding: 0;
+}
+.ctn-colorbackgrour p{
+  width: 100%;
+  padding: 15px 20px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+.ctn-colorbackgrour p.colorbackgrour{
+  background: #333e44;
+}
+#roundBotLeftBody > a {
+  font-weight: bold;
+  border: 1px solid #1cc09b;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: #11896e;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 30px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+}
+#roundBotLeftBody > a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(28,192,155,1);
+-moz-box-shadow: 0px 0px 19px 1px rgba(28,192,155,1);
+box-shadow: 0px 0px 19px 1px rgba(28,192,155,1);
+}
+#roundBotRightHeader {
+  position: relative;
+  text-align: center;
+}
+#roundBotRightHeader > p {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding-top: 20px;
+}
+.clock {
+  text-align: center;
+}
+
+
+.ctn-tickets{
+  width: 95%;
+  background: #2d3538;
+  position: absolute;
+  padding: 30px 20px;
+  z-index: 1;
+  border-radius: 0 0 5px 5px;
+  top: 460px;
+  left: 15px;
+}
+.ctn-tickets-btt{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.ctn-tickets-btt a{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.6rem 2rem;
+  border: 2px solid #2ec09a;
+  background: #1e896d;
+  border-radius: 5px;
+}
+.ctn-tickets-btt a:hover{
+  opacity: 0.7;
+}
+#roundBotRightHeader .clock1Span img{
+  margin-right: 10px;
+}
+#roundBotRightHeader .clock2Span img{
+  margin-right: 10px;
+}
+#roundBotRightHeader .clock1Span {
+  width: 100%;
+  color: #2ee2ba;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+#roundBotRightHeader .clock2Span {
+  color: #cf9f0b;
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+#roundBotRightbody > ul{
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    padding-bottom: 27px;
+}
+#roundBotRightbody > ul > li .Round-bot-right-row-left{
+  width: 40%;
+  float: left;
+  padding-top: 10px;
+}
+#roundBotRightbody > ul > li .Round-bot-right-row-right{
+  width: 60%;
+  float: right;
+  text-align: right;
+}
+
+.Round-bot-right {
+  /*background-color: #252b2e;*/
+  position: relative;
+  width: 100%;
+  background: 
+    linear-gradient(135deg, transparent 10px, #252b2e 0) top left,
+    linear-gradient(225deg, transparent 10px, #252b2e 0) top right,
+    linear-gradient(315deg, transparent 10px, #252b2e 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #252b2e 0) bottom left;
+
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), 
+                  linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), 
+                  linear-gradient(to top right, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), 
+                  linear-gradient(to top left, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), 
+                  
+                  linear-gradient(#252b2e, #252b2e), 
+                  linear-gradient(#252b2e, #252b2e), 
+                  linear-gradient(#252b2e, #252b2e), 
+                  linear-gradient(#252b2e, #252b2e);
+  background-size: 2px calc(100% - 30px), 2px calc(100% - 30px), calc(100% - 30px) 2px,calc(100% - 30px) 2px,
+                /*Cac goc*/
+                 15px 15px,15px 15px,15px 15px,15px 15px,
+                 /*Tap nen*/
+                 calc(100% - 30px) 60%,calc(100% - 30px) 60%, 60% calc(100% - 30px),60% calc(100% - 30px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+
+}
+.Round-bot-right a.Round-bot-questionIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+/*#roundBotRightHeader:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-top: 10px solid #14181a;
+    border-left: 10px solid #252b2e;
+    width: 0;
+}
+#roundBotRightHeader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 0;
+    border-left: 0;
+    border-top: 10px solid #14181a;
+    border-right: 10px solid #252b2e;
+    width: 0;
+}*/
+/*#roundBotRightbody{
+  width: 100%;
+  position: relative;
+}
+#roundBotRightbody:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-top: 10px solid #252b2e;
+    border-right: 10px solid #14181a;
+    width: 0;
+}
+#roundBotRightbody:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 0;
+    border-left: 0;
+    border-top: 10px solid #252b2e;
+    border-left: 10px solid #14181a;
+    width: 0;
+}
+*/
+}
+.Round-bot-right-row-left {
+  display: block;
+  float: left;
+}
+.Round-bot-right-row-left > p {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+.Round-bot-right-row-right {
+  display: block;
+  float: right;
+}
+.Round-bot-right-row-right h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2ee2ba;
+  text-align: right;
+}
+.Round-bot-right-row-right h1 span{
+  margin-left: 5px;
+}
+.Round-bot-right-row-right h1 span img{
+    width: 25px;
+    margin-bottom: -7px;
+}
+.Round-bot-right-row-right p {
+  color: #ffffff;
+  margin: 0;
+}
+.contentLevel {
+  margin-right: 0;
+}
+#levelHeader {margin-left: -15px;}
+#levelHeader .nav-tabs {
+  width: 100%;
+  border-bottom: 0;
+  margin: 50px 0 0;
+}
+/*#levelHeader .nav-tabs li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-bottom: 0;
+}
+#levelHeader .nav-tabs li a {
+    margin-right: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    border: 1px solid #405763;
+    border-radius: 0;
+    color: #fff;
+    padding: 10px 0;
+    background-color: #252b2e;
+}
+#levelHeader .nav-tabs li:not(:first-child) a {
+  border-left: 0;
+}
+#levelHeader .nav-tabs li a:hover {
+  background-color: #11896e;
+}
+#levelHeader .nav-tabs li a.active {
+  background-color: #11896e;
+}
+#levelHeader .nav-tabs li:first-child a {
+  border-top-left-radius: 4px;
+}
+#levelHeader .nav-tabs li:last-child a {
+  border-top-right-radius: 4px;
+}
+*/
+/* contentLevel*/
+#levelHeader .nav-tabs li{
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-bottom: 0;
+  
+}
+#levelHeader .nav-tabs li a {
+  margin-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  box-sizing: border-box;
+  border: 2px solid #405763;
+  border-radius: 0;
+  color: #fff;
+  padding: 8px 0;
+  background: #252b2e;
+  
+}
+#levelHeader .nav-tabs li:first-child a {
+  margin-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  border: 0px solid #405763;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 0;
+  /*background: #252b2e;*/
+  background:
+    linear-gradient(135deg, transparent 10px, #252b2e 0) top left,
+    linear-gradient(225deg, transparent 0px, #252b2e 0) top right,
+    linear-gradient(315deg, transparent 0px, #252b2e 0) bottom right,
+    linear-gradient(45deg,  transparent 0px, #252b2e 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(to bottom right, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), linear-gradient(#252b2e, #252b2e), linear-gradient(#252b2e, #252b2e);
+  background-size: 2px 100%, 2px 100%, 100% 2px,100% 2px, 15px 15px, 100% 100%, 100% 100%;;
+  background-position: 0% 15px, 100% 100%, 15px 0%, 0px 100%, 0% 0%, 15px 0%, 100% 15px;
+}
+#levelHeader .nav-tabs li:last-child a {
+  margin-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  border: 0px solid #405763;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 0;
+  background:
+    linear-gradient(135deg, transparent 0px, #252b2e 0) top left,
+    linear-gradient(225deg, transparent 0px, #252b2e 0) top right,
+    linear-gradient(315deg, transparent 0px, #252b2e 0) bottom right,
+    linear-gradient(45deg,  transparent 0px, #252b2e 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(#405763, #405763), linear-gradient(to bottom left, transparent calc(50% - 1px), #405763 calc(50% - 1px), #405763 calc(50% + 1px), #252b2e calc(50% + 1px)), linear-gradient(#252b2e, #252b2e), linear-gradient(#252b2e, #252b2e);
+  background-size: 2px 100%, 2px 100%, 100% 2px, 100% 2px, 15px 15px, 100% 100%, 100% 100%;
+  background-position: 0% 0%, 100% 15px, -15px 0%, 0px 100%, 100% 0%, -15px 0%, 100% 15px;
+}
+#levelHeader .nav-tabs li a:hover {
+  background-color: #11896e;
+  color: #252b2e;
+  border: 2px solid #1cc09b;
+}
+#levelHeader .nav-tabs li a.active {
+  background-color: #11896e;
+  color: #252b2e;
+  border: 2px solid #1cc09b;
+}
+#levelHeader .nav-tabs li:first-child a.active{
+  border:none;
+  color: #252b2e;
+  background-color: transparent;
+  background-image: linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(to bottom right, transparent calc(50% - 1px), #1cc09b calc(50% - 1px), #1cc09b calc(50% + 1px), #11896e calc(50% + 1px)), linear-gradient(#11896e, #11896e), linear-gradient(#11896e, #11896e);
+  background-size: 2px 100%, 2px 100%, 100% 2px,100% 2px, 15px 15px, 100% 100%, 100% 100%;;
+  background-position: 0% 15px, 100% 100%, 15px 0%, 0px 100%, 0% 0%, 15px 100%, 100% 15px;
+}
+#levelHeader .nav-tabs li:first-child a:hover{
+  border:none;
+  color: #252b2e;
+  background-color: transparent;
+  background-image: linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(to bottom right, transparent calc(50% - 1px), #1cc09b calc(50% - 1px), #1cc09b calc(50% + 1px), #11896e calc(50% + 1px)), linear-gradient(#11896e, #11896e), linear-gradient(#11896e, #11896e);
+  background-size: 2px 100%, 2px 100%, 100% 2px,100% 2px, 15px 15px, 100% 100%, 100% 100%;;
+  background-position: 0% 15px, 100% 100%, 15px 0%, 0px 100%, 0% 0%, 15px 100%, 100% 15px;
+}
+#levelHeader .nav-tabs li:last-child a:hover  {
+  color: #252b2e;
+  border:none;
+  background-color: transparent;
+  background-image: linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(to bottom left, transparent calc(50% - 1px), #1cc09b calc(50% - 1px), #1cc09b calc(50% + 1px), #11896e calc(50% + 1px)), linear-gradient(#11896e, #11896e), linear-gradient(#11896e, #11896e);
+  background-size: 2px 100%, 2px 100%, 100% 2px, 100% 2px, 15px 15px, 100% 100%, 100% 100%;
+  background-position: 0% 0%, 100% 15px, -15px 0%, 0px 100%, 100% 0%, -15px 0%, 100% 15px;
+}
+#levelHeader .nav-tabs li:last-child a.active  {
+  color: #252b2e;
+  border:none;
+  background-color: transparent;
+  background-image: linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(#1cc09b, #1cc09b), linear-gradient(to bottom left, transparent calc(50% - 1px), #1cc09b calc(50% - 1px), #1cc09b calc(50% + 1px), #11896e calc(50% + 1px)), linear-gradient(#11896e, #11896e), linear-gradient(#11896e, #11896e);
+  background-size: 2px 100%, 2px 100%, 100% 2px, 100% 2px, 15px 15px, 100% 100%, 100% 100%;
+  background-position: 0% 0%, 100% 15px, -15px 0%, 0px 100%, 100% 0%, -15px 0%, 100% 15px;
+}
+
+
+#levelbody {
+  margin-left: -15px;
+  background-color: #252b2e;
+  border-radius: 4px;
+  padding-bottom: 10px;
+  position: relative;
+}
+#levelBody > p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+#levelBody > p span {
+  color: #11896e;
+}
+.clearfix p{
+  margin: 0;
+  /* padding: 3px 0; */
+}
+#levelBody > p span:first-child {
+  padding-right: 30px;
+}
+.levelList {
+  list-style-type: none;
+  padding: 0 15px;
+  margin: 0;
+}
+.levelList li:nth-child(even) {
+  background-color: #2f363a;
+}
+.ctntable-part .table tr th{
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  background: #252b2e !important;
+  border: 0;
+  border-bottom: 1px solid #505d63;
+}
+.ctntable-part .table tr td{
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.ctntable-part .table tr td.tableColor{
+  color: #2ee2ba;
+}
+
+.ctntable-part .table tr td span{
+  width: 25px;
+  display: inline-block;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th{
+  background: #2f363a;
+}
+#levelbody:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 10px solid #14181b;
+    border-left: 10px solid #252b2e;
+    width: 0;
+}
+#levelbody:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 10px solid #14181b;
+    border-right: 10px solid #252b2e;
+    width: 0;
+}
+.levelPlayer {
+  color: #ffffff;
+  text-align: left;
+}
+.levelPlayer span {
+  display: inline-block;
+  width: 30px;
+}
+.levelVolume {
+  color: #11896e;
+  text-align: left;
+}
+.levelPayout {
+  color: #11896e;
+  text-align: right;
+}
+.panel-body {
+  background-color: #252b2e;
+}
+.footer {
+  margin: 50px 17px 50px 55px;
+  text-align: center;
+  font-size: 12px;
+}
+.footer p{
+  font-size: 12px;
+  color: #536067;
+}
+#subscribe {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#subscribe input:first-child {
+  background-color: #151c1f;
+  border: 2px solid #2f363a;
+  border-radius: 4px 0 0 4px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: -4px;
+}
+#subscribe input:last-child {
+  background-color: #11896e;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  border: 2px solid #1cc09b;
+  border-radius: 0 4px 4px 0;
+  padding: 10px 20px;
+}
+.modal-content {
+  background-color: #2d3539;
+}
+.modal-header {
+  border: 0;
+}
+.modal-header > h1{
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2ee2ba;
+}
+.panel-heading {
+  background-color: #11896e !important;
+}
+.panel-title > a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.panel {
+  border: 0;
+}
+.panel-body {
+  border: 0 !important;
+}
+.modal-footer {
+  text-align: center;
+  display: inline-block;
+  border: 0;
+}
+.modal-footer > a {
+  font-weight: bold;
+  border: 1px solid #1cc09b;
+  border-radius: 4px;
+  color: #ffffff !important;
+  padding: 10px 20px;
+  background: #11896e;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-footer > a:hover {
+  background-color: transparent;
+}
+#masterKeyHeader ul li > a.item-part1{
+  border-radius: 5px 0 0 5px;
+}
+#masterKeyHeader ul li > a.item-part2{
+  border-radius: 0 5px 5px 0;
+}
+#masterKeyHeader ul li.active > a {
+  background-color: #11896e !important;
+  font-weight: 700;
+  border: 1px solid #1cc09b;
+}
+#roundBotLeftHeader ul li.active > a {
+  background-color: #11896e !important;
+}
+#incomeList {
+  list-style-type: none;
+  padding: 15px;
+}
+#incomeList li p.incomeName {
+  float: left;
+  color: #ffffff;
+}
+#incomeList li p.incomeValue {
+  float: right;
+  color: #11896e;
+  font-size: 16px;
+}
+#incomeTab {
+  text-align: center;
+}
+#incomeTab > a {
+  font-weight: bold;
+  border: 1px solid #1cc09b;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: #11896e;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 30px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+}
+#referralList {
+  list-style-type: none;
+  padding: 15px;
+}
+#referralList li .referralLeft {
+  text-align: left;
+  float: left;
+  color: #ffffff;
+}
+#referralList li .referralLeft p.referra-text{
+  padding-left: 20px;
+}
+#referralList li .referralLeft p:last-child {
+  color: #f5b902;
+  font-size: 16px;
+}
+#referralList li .referralRight {
+  float: right;
+}
+#referralList li .referralRight > a {
+  font-weight: bold;
+  border: 1px solid #1cc09b;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: #11896e;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+#levelHeader ul li.active > a {
+  background-color: #11896e !important;
+  font-weight: 700;
+  border: 1px solid #1cc09b;
+}
+
+/* content dice*/
+#dice {
+  background: #14181a;
+}
+#dice #navbarSupportedContentLG ul #bar-li-1 a {
+  background: url("images/hd-top-icon1.png") transparent no-repeat center top 10px;
+}
+#dice #navbarSupportedContentLG ul #bar-li-2 a {
+  background: url("images/hd-top-icon2.png") #151c1f no-repeat center top 10px;
+}
+#dice .diceContainerRight {
+  background:  #252b2e;
+}
+#dice .dicecontentRight {
+  width: 100%;
+  padding: 25px 0;
+  position: relative;
+}
+#dice .dicecontentRight a.questionIcon{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+#dice .dicecontentRight p{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+#dice .dicecontentRight p.titleCenter{
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+#dice .dicecontentRight p span{
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #2ee2ba;
+}
+#dice .dicecontentRight .table{
+  margin-top: 10px;
+}
+#dice .dicecontentRight .table thead tr th{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  border: 0;
+  margin-bottom: 10px;
+}
+#dice .dicecontentRight .table tbody tr td{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #bb64e2;
+  border-top: 1px solid #505d63;
+}
+#dice .dicecontentRight .table tbody tr td.playerNameOne{
+  color: #ffbf00;
+  font-weight: 700;
+}
+#dice .dicecontentRight .table tbody tr td.playerName{
+  padding: 0.75rem 0;
+}
+#dice .dicecontentRight .table tbody tr td.payOutValue{
+  color: #2ee2ba;
+}
+#dice .ctntable-part .table tr td.tableColorRed{
+  color: #ff5454;
+}
+#dice .ctntable-part .table tr th{
+  background: #14181a !important;
+}
+#dice .diceBetsContainer{
+  width: 100%;
+  padding: 4.5rem 0;
+  position: relative;
+}
+#dice .diceBetsContainer a.questionIcon{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+#dice .diceBetsContainer #dicebetsHeader {
+  width: 100%; 
+  text-align: center;
+  overflow: hidden;
+}
+#dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 {
+  width: 50%; 
+  margin: 0 auto;
+}
+#dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  border: 1px solid #405763;
+  border-radius: 0;
+  margin-bottom: 1px;
+  padding: 0.5rem 0;
+}
+#dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li a.borderDicebets1 {
+  border-radius: 5px 0 0 5px;
+}
+#dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li a.borderDicebets4 {
+  border-radius: 0 5px 5px 0;
+}
+#dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li a.active {
+  background: #11896e;
+  font-weight: 700;
+  border: 1px solid #1cc09b;
+}
+#dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li {
+  width: 25%;
+}
+#dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li a:hover {
+  background: #11896e;
+  font-weight: 700;
+  border: 1px solid #1cc09b;
+}
+
+#dice .diceBetsContainer #diceBetsBody {
+  width: 100%;
+  margin-top: 30px;
+}
+.ctn-diceRollLeft{
+  background: #1c2123;
+
+}
+/*Start Roll game*/
+#dice #roll-game {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+#dice #roll-game a.questionIcon {
+  position: absolute;
+  right: 0;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+#dice #roll-game-bg {
+  background: url("images/roll-game-bg.jpg") no-repeat top center;
+  background-size: cover;
+  padding: 30px 0;
+}
+#dice #roll-game-header {
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+#dice #roll-game-header h1 {
+  font-size: 110px;
+  font-weight: bold;
+}
+#dice #roll-game-header p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#dice #roll-game-header button {
+  margin-bottom: 30px;
+}
+#dice #roll-game-header div:first-child {
+  background: url("images/roll-game-1.png") no-repeat top center;
+  background-size: contain;
+}
+#dice #roll-game-header div:last-child {
+  background: url("images/roll-game-2.png") no-repeat top center;
+  background-size: contain;
+}
+#dice #roll-game-header div:last-child h1 {
+  color: #2ee2ba;
+}
+/*Input Range custom*/
+#dice #roll-game-range {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#dice .rangeslider__fill {
+  background-color: #2ee2ba !important;
+  border: 1px solid #05fdf9;
+}
+#dice .rangeslider {
+  background-color: #ff5454 !important;
+}
+#dice .rangeslider__handle {
+  background-color: #ffffff !important;
+  border-radius: 4px !important;
+}
+/*End input range custom*/
+
+#dice #roll-direct-btn {
+  max-width: 370px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#dice #roll-under-btn {
+  padding: 10px 10px;
+  font-weight: bold;
+  background-color: #252b2e;
+  display: block;
+  margin: 10px auto;
+}
+#dice #roll-under-btn:hover {
+  background-color: transparent;
+}
+#dice #roll-over-btn {
+  padding: 10px 10px;
+  font-weight: bold;
+  background-color: #252b2e;
+  display: block;
+  margin: 10px auto;
+}
+#dice button.active {
+  background-color: #11896e !important;
+}
+#dice #roll-over-btn:hover {
+  background-color: transparent;
+}
+#dice #roll-game-body {
+  background-color: #1d2224;
+  padding: 20px 15px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 80px;
+}
+#dice #roll-game-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+#dice #roll-game-body ul li .payout-name {
+  display: block;
+  float: left;
+}
+#dice #roll-game-body ul li .payout-value {
+  display: block;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2ee2ba;
+}
+#dice #roll-game-body input {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+#dice .input-group-text {
+  background-color: #151c1f;
+  color: #ffffff;
+  border-left: 0;
+}
+#dice .btn-group {
+  width: 100%;
+  margin: 10px 0;
+}
+#dice .form-control {
+  padding: 10px 0;
+}
+#dice .amount-btn {
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #11896e;
+  border: 1px solid #1cc09b;
+  width: 25%;
+}
+#dice .amount-btn:hover {
+  background-color: transparent;
+  border: 1px solid #1cc09b;
+}
+#dice #roll-btn {
+  margin: 10px 0;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 31px;
+  display: block;
+  width: 100%;
+  background-color: #ff3f90;
+  font-size: 20px;
+  font-weight: bold;
+  border: 4px solid #ff5ade;
+   vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+}
+#dice #roll-btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(255,90,222,1);
+-moz-box-shadow: 0px 0px 19px 1px rgba(255,90,222,1);
+box-shadow: 0px 0px 19px 1px rgba(255,90,222,1);
+}
+#dice #best-amount{
+ margin-bottom: 33px;
+ font-size: 0.9rem;
+}
+#dice .best-amount2{
+ margin-bottom: 10px;
+ font-size: 0.9rem;
+}
+#dice #roll-game-body ul{
+  margin-top: 30px;
+}
+/*End Roll game*/
+
+/*conten Dividens*/
+#Mydividens .modal-dialog {
+    max-width: 60%;
+    margin: 8.75rem auto;
+
+}
+#Mydividens .modal-dialog .modal-content {
+  padding: 30px 15px;
+  position: relative;
+  width: 100%;
+  background: 
+    linear-gradient(135deg, transparent 10px, #252b2d 0) top left,
+    linear-gradient(225deg, transparent 10px, #252b2d 0) top right,
+    linear-gradient(315deg, transparent 10px, #252b2d 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #252b2d 0) bottom left;
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#252b2d, #252b2d), linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d), linear-gradient(#252b2d, #252b2d), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  linear-gradient(to top right, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  linear-gradient(to top left, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  
+                  linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d);
+  background-size: 2px calc(100% - 30px), 2px calc(100% - 30px), calc(100% - 30px) 2px,calc(100% - 30px) 2px,
+                /*Cac goc*/
+                 15px 15px,15px 15px,15px 15px,15px 15px,
+                 /*Tap nen*/
+                 calc(100% - 30px) 60%,calc(100% - 30px) 60%, 60% calc(100% - 30px),60% calc(100% - 30px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+
+}
+#Mydividens .modal-dialog .modal-content .modal-header button.close {
+  border: 1px solid #3f5763;
+  background: #151b1f;
+  border-radius: 5px;
+  color: #fff;
+  opacity: 1;
+  padding: 0.2rem 0.5rem;
+}
+#Mydividens .modal-dialog .modal-content .modal-header button.close:hover{
+  opacity: 0.6;
+}
+#Mydividens .modal-dialog .modal-content .modal-header{
+  width: 100%; 
+  text-align: center;
+}
+#Mydividens .modal-dialog .modal-content .modal-header h4.modal-title{
+  width: 100%; 
+  text-align: center;
+  display: inline-block;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part1{
+  width: 100%; 
+  text-align: center;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part1 h1{
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 5px 0;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part1 .ctn-body-from{
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  border: 1px solid #555275;
+  border-radius: 5px;
+  background: #220622;
+  padding: 4px 5px;
+  max-height: 40px;
+  margin: 5px 0;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 20px 0 30px;
+  background: 
+    linear-gradient(135deg, transparent 10px, #151b1f 0) top left,
+    linear-gradient(225deg, transparent 10px, #151b1f 0) top right,
+    linear-gradient(315deg, transparent 10px, #151b1f 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #151b1f 0) bottom left;
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#151b1f, #151b1f), linear-gradient(#151b1f, #151b1f), 
+                  linear-gradient(#151b1f, #151b1f), linear-gradient(#151b1f, #151b1f), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 1px), #151b1f calc(50% - 1px), #151b1f calc(50% + 1px), #151b1f calc(50% + 1px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 1px), #151b1f calc(50% - 1px), #151b1f calc(50% + 1px), #151b1f calc(50% + 1px)), 
+                  linear-gradient(to top right, transparent calc(50% - 1px), #151b1f calc(50% - 1px), #151b1f calc(50% + 1px), #151b1f calc(50% + 1px)), 
+                  linear-gradient(to top left, transparent calc(50% - 1px), #151b1f calc(50% - 1px), #151b1f calc(50% + 1px), #151b1f calc(50% + 1px)), 
+                  
+                  linear-gradient(#151b1f, #151b1f), 
+                  linear-gradient(#151b1f, #151b1f), 
+                  linear-gradient(#151b1f, #151b1f), 
+                  linear-gradient(#151b1f, #151b1f);
+  background-size: 2px calc(100% - 30px), 2px calc(100% - 30px), calc(100% - 30px) 2px,calc(100% - 30px) 2px,
+                /*Cac goc*/
+                 10px 10px,10px 10px,10px 10px,10px 10px,
+                 /*Tap nen*/
+                 calc(100% - 20px) 60%,calc(100% - 20px) 60%, 60% calc(100% - 20px),60% calc(100% - 20px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 .ctn-burn {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border: 1px solid #3f5763;
+  background: #151b1f;
+  border-radius: 7px;
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 .ctn-burn:hover {
+  opacity: 0.6;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 .ctn-burn h3{
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 h2 {
+  color: #fff;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 h1 {
+  color: #2ee2ba;
+  font-size: 3.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 p{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 p span{
+  color: #2ee2ba;
+}
+#Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 p img{
+  margin-right: 10px;
+}
+#Mydividens .modal-dialog .modal-content .modal-footer .ctn-fom-dividens-part{
+  width: 33.333%;
+  padding: 0 15px;
+  float: left;
+  margin: 0;
+  text-align: center;
+}
+#Mydividens .modal-dialog .modal-content .modal-footer .ctn-fom-dividens-part h1{
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+#Mydividens .modal-dialog .modal-content .modal-footer .ctn-fom-dividens-part input{
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #3f5763;
+  border-radius: 5px;
+  background: #000000;
+  padding: 10px 15px;
+  margin: 15px 0;
+}
+#Mydividens .modal-dialog .modal-content .modal-footer .ctn-fom-dividens-part button{
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #1bc09b;
+  border-radius: 5px;
+  background: #11896d;
+  /*padding: 10px 15px;*/
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+}
+#Mydividens .modal-dialog .modal-content .modal-footer .ctn-fom-dividens-part button.btn-primary{
+  border: 1px solid #00c0ff;
+  background: #0b6bb6;
+}
+#Mydividens .modal-dialog .modal-content .modal-footer .ctn-fom-dividens-part button:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(27,192,155,1);
+  -moz-box-shadow: 0px 0px 19px 1px rgba(27,192,155,1);
+  box-shadow: 0px 0px 19px 1px rgba(27,192,155,1);
+}
+#Mydividens .modal-dialog .modal-content .modal-footer .ctn-fom-dividens-part button.btn-primary:hover{
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(0,192,255,1);
+  -moz-box-shadow: 0px 0px 19px 1px rgba(0,192,255,1);
+  box-shadow: 0px 0px 19px 1px rgba(0,192,255,1);
+}
+/*hover .contentBottom #resultModal*/
+
+.contentBottom #resultModal:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(28,192,155,1);
+-moz-box-shadow: 0px 0px 19px 1px rgba(28,192,155,1);
+box-shadow: 0px 0px 19px 1px rgba(28,192,155,1);
+}
+.contentBottom > div > div > h1:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.04);
+}
+#sendETHBackground a:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(255,160,90,1);
+-moz-box-shadow: 0px 0px 19px 1px rgba(255,160,90,1);
+box-shadow: 0px 0px 19px 1px rgba(255,160,90,1);
+}
+
+#incomeTab > a:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(28,192,155,1);
+-moz-box-shadow: 0px 0px 19px 1px rgba(28,192,155,1);
+box-shadow: 0px 0px 19px 1px rgba(28,192,155,1);
+}
+
+/*content register*/
+#MyRegister .modal-dialog {
+    max-width: 45%;
+    margin: 8.75rem auto;
+
+}
+#MyRegister .modal-dialog .modal-content {
+  padding: 30px 15px;
+  position: relative;
+  width: 100%;
+  background: 
+    linear-gradient(135deg, transparent 10px, #252b2d 0) top left,
+    linear-gradient(225deg, transparent 10px, #252b2d 0) top right,
+    linear-gradient(315deg, transparent 10px, #252b2d 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #252b2d 0) bottom left;
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#252b2d, #252b2d), linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d), linear-gradient(#252b2d, #252b2d), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  linear-gradient(to top right, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  linear-gradient(to top left, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  
+                  linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d);
+  background-size: 2px calc(100% - 30px), 2px calc(100% - 30px), calc(100% - 30px) 2px,calc(100% - 30px) 2px,
+                /*Cac goc*/
+                 15px 15px,15px 15px,15px 15px,15px 15px,
+                 /*Tap nen*/
+                 calc(100% - 30px) 60%,calc(100% - 30px) 60%, 60% calc(100% - 30px),60% calc(100% - 30px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+  text-align: center;
+}
+#MyRegister .modal-dialog .modal-content .modal-header h4.modal-title{
+  width: 100%; 
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part1{
+  width: 100%; 
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part1 button{
+  color: #fff;
+  background: #11896d;
+  border: 1px solid #1bc09b;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 25%;
+  float: left;
+  height: 60px;
+}
+#MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part1 input{
+  color: #fff;
+  background: #151b1f;
+  border: 1px solid #2f3539;
+  font-size: 1.2rem;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  height: 60px;
+  width: 75%;
+  float: left;
+  text-transform: uppercase;
+}
+#MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part2{
+  width: 100%; 
+  text-align: left;
+}
+#MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part2 h1{
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0; 
+}
+#MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part2 ul{
+  padding-left: 20px;
+  margin: 0;
+}
+#MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part2 ul li{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+#MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part2 p{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+#MyRegister .modal-dialog .modal-content .modal-footer button {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  background: 
+    linear-gradient(135deg, transparent 10px, #ff5353 0) top left,
+    linear-gradient(225deg, transparent 10px, #ff5353 0) top right,
+    linear-gradient(315deg, transparent 10px, #ff5353 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #ff5353 0) bottom left;
+
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#ff9f5a, #ff9f5a), linear-gradient(#ff9f5a, #ff9f5a), 
+                  linear-gradient(#ff9f5a, #ff9f5a), linear-gradient(#ff9f5a, #ff9f5a), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 2px), #ff9f5a calc(50% - 2px), #ff9f5a calc(50% + 2px), #ff5353 calc(50% + 2px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 2px), #ff9f5a calc(50% - 2px), #ff9f5a calc(50% + 2px), #ff5353 calc(50% + 2px)), 
+                  linear-gradient(to top right, transparent calc(50% - 2px), #ff9f5a calc(50% - 2px), #ff9f5a calc(50% + 2px), #ff5353 calc(50% + 2px)), 
+                  linear-gradient(to top left, transparent calc(50% - 2px), #ff9f5a calc(50% - 2px), #ff9f5a calc(50% + 2px), #ff5353 calc(50% + 2px)), 
+                  
+                  linear-gradient(#ff5353, #ff5353), 
+                  linear-gradient(#ff5353, #ff5353), 
+                  linear-gradient(#ff5353, #ff5353), 
+                  linear-gradient(#ff5353, #ff5353);
+  background-size: 4px calc(100% - 30px), 4px calc(100% - 30px), calc(100% - 30px) 4px,calc(100% - 30px) 4px,
+                /*Cac goc*/
+                 15px 15px,15px 15px,15px 15px,15px 15px,
+                 /*Tap nen*/
+                 calc(100% - 30px) 60%,calc(100% - 30px) 60%, 60% calc(100% - 30px),60% calc(100% - 30px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+}
+#MyRegister .modal-dialog .modal-content .modal-footer button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*content burn*/
+#Myburn .modal-dialog {
+    max-width: 59%;
+    margin: 8.75rem auto;
+}
+#Myburn .modal-dialog .modal-content {
+  padding: 30px 15px;
+  position: relative;
+  width: 100%;
+  background: 
+    linear-gradient(135deg, transparent 10px, #252b2d 0) top left,
+    linear-gradient(225deg, transparent 10px, #252b2d 0) top right,
+    linear-gradient(315deg, transparent 10px, #252b2d 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #252b2d 0) bottom left;
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#252b2d, #252b2d), linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d), linear-gradient(#252b2d, #252b2d), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  linear-gradient(to top right, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  linear-gradient(to top left, transparent calc(50% - 1px), #252b2d calc(50% - 1px), #252b2d calc(50% + 1px), #252b2d calc(50% + 1px)), 
+                  
+                  linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d), 
+                  linear-gradient(#252b2d, #252b2d);
+  background-size: 2px calc(100% - 30px), 2px calc(100% - 30px), calc(100% - 30px) 2px,calc(100% - 30px) 2px,
+                /*Cac goc*/
+                 15px 15px,15px 15px,15px 15px,15px 15px,
+                 /*Tap nen*/
+                 calc(100% - 30px) 60%,calc(100% - 30px) 60%, 60% calc(100% - 30px),60% calc(100% - 30px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+  text-align: center;
+}
+
+#Myburn .modal-dialog .modal-content .modal-header button.close {
+  border: 1px solid #3f5763;
+  background: #151b1f;
+  border-radius: 5px;
+  color: #fff;
+  opacity: 1;
+  padding: 0.2rem 0.5rem;
+}
+#Myburn .modal-dialog .modal-content .modal-header button.close:hover{
+  opacity: 0.6;
+}
+
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 20px 0 30px;
+  background: 
+    linear-gradient(135deg, transparent 10px, #151b1f 0) top left,
+    linear-gradient(225deg, transparent 10px, #151b1f 0) top right,
+    linear-gradient(315deg, transparent 10px, #151b1f 0) bottom right,
+    linear-gradient(45deg,  transparent 10px, #151b1f 0) bottom left;
+  /*Neu muon border toan bo*/
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#151b1f, #151b1f), linear-gradient(#151b1f, #151b1f), 
+                  linear-gradient(#151b1f, #151b1f), linear-gradient(#151b1f, #151b1f), 
+
+                  linear-gradient(to bottom right, transparent calc(50% - 1px), #151b1f calc(50% - 1px), #151b1f calc(50% + 1px), #151b1f calc(50% + 1px)), 
+                  linear-gradient(to bottom left, transparent calc(50% - 1px), #151b1f calc(50% - 1px), #151b1f calc(50% + 1px), #151b1f calc(50% + 1px)), 
+                  linear-gradient(to top right, transparent calc(50% - 1px), #151b1f calc(50% - 1px), #151b1f calc(50% + 1px), #151b1f calc(50% + 1px)), 
+                  linear-gradient(to top left, transparent calc(50% - 1px), #151b1f calc(50% - 1px), #151b1f calc(50% + 1px), #151b1f calc(50% + 1px)), 
+                  
+                  linear-gradient(#151b1f, #151b1f), 
+                  linear-gradient(#151b1f, #151b1f), 
+                  linear-gradient(#151b1f, #151b1f), 
+                  linear-gradient(#151b1f, #151b1f);
+  background-size: 2px calc(100% - 30px), 2px calc(100% - 30px), calc(100% - 30px) 2px,calc(100% - 30px) 2px,
+                /*Cac goc*/
+                 10px 10px,10px 10px,10px 10px,10px 10px,
+                 /*Tap nen*/
+                 calc(100% - 20px) 60%,calc(100% - 20px) 60%, 60% calc(100% - 20px),60% calc(100% - 20px);
+  background-position: left center, right center, top center, bottom center, top left ,top right,bottom left,bottom right,center 100%,center 0%, left center, right center;
+}
+#Myburn .modal-dialog .modal-content .modal-header h4.modal-title{
+  width: 100%; 
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 .ctn-burn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 .ctn-burn:hover {
+  opacity: 0.6;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 .ctn-burn h3{
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 h2 {
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 h1 {
+  color: #2ee2ba;
+  font-size: 3.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 p{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 .table{
+  margin: 0;
+  margin-top: 20px;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 .table tr th {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    background: #151a1f !important;
+    border: 0;
+    border-bottom: 1px solid #505d63;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 .table tr td {
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+#Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 .table tr td.tableColor {
+      color: #2ee2ba;
+}
+/*light button*/
+@keyframes shadow-pulse-orange
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 84, 84, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+@keyframes shadow-pulse-pink
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 63, 144, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+@keyframes shadow-pulse-green
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(17, 137, 110, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+.shadow-animate-orange {
+  animation: shadow-pulse-orange 1s infinite;
+}
+.shadow-animate-green {
+  animation: shadow-pulse-green 1s infinite;
+}
+.contentBottom > div > div {
+  border-radius: 22px;
+}
+.shadow-animate-pink {
+  animation: shadow-pulse-pink 1s infinite;
+}
+/*end light button*/
+/*progress bar*/
+.progress {
+  background-color: transparent;
+}
+.ctn-body-from .progress .progress-bar {
+  background-color: #ff3f90;
+  border: 2px solid #ff5ade;
+}
+.ctn-body-from {
+  position: relative;
+}
+.ctn-body-from span {
+  position: absolute;
+  top: 0; 
+}

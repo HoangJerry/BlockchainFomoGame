@@ -1,0 +1,264 @@
+<div id="dice">
+    <div class="diceContainer">
+        <div class="row">
+            <div class="col-xl-7 col-lg-12 ctn-diceRollLeft">
+                <div id="roll-game">
+                    <!-- <a class="questionIcon" href="#">
+                        <img src="assets/styles/images/ctn-conten-icon7.png">
+                    </a> -->
+                    <div id="roll-game-bg">
+                        <div id="roll-game-header" class="row">
+                            <div class="col-6">
+                                <h1>{{prediction}}</h1>
+                                <p>Prediction</p>
+                            </div>
+                            <div class="col-6">
+                                <h1 [style.color]="(under&&prediction<=currentLuckyNumber||(!under&&prediction>=currentLuckyNumber))?'#ff5454':'#2ee2ba'">{{currentLuckyNumber
+                                    <10? '0'+currentLuckyNumber:currentLuckyNumber}}</h1>
+                                <div id="luckyText" >
+                                    <h1>
+                                      <span [class.runAnimationPending]="runAnimationPending">l</span>
+                                      <span [class.runAnimationPending]="runAnimationPending">u</span>
+                                      <span [class.runAnimationPending]="runAnimationPending">c</span>
+                                      <span [class.runAnimationPending]="runAnimationPending">k</span>
+                                      <span [class.runAnimationPending]="runAnimationPending" style="padding-right: 5px">y</span>
+                                      <span [class.runAnimationPending]="runAnimationPending">n</span>
+                                      <span [class.runAnimationPending]="runAnimationPending">u</span>
+                                      <span [class.runAnimationPending]="runAnimationPending">m</span>
+                                      <span [class.runAnimationPending]="runAnimationPending">b</span>
+                                      <span [class.runAnimationPending]="runAnimationPending">e</span>
+                                      <span [class.runAnimationPending]="runAnimationPending">r</span>
+                                    </h1>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div id="roll-direct-btn" class="row">
+                            <div class="col-6">
+                                <button id="roll-under-btn" class="btn btn-success" [class.active]="under" (click)="onChangeUnder(true)">Roll Under</button>
+                            </div>
+                            <div class="col-6">
+                                <button id="roll-over-btn" (click)="onChangeUnder(false)" [class.active]="!under" class="btn btn-success">Roll Over</button>
+                            </div>
+                        </div>
+                        <div id="roll-game-range">
+                            <section id="top">
+                                <input id="input-ranger" type="range" min="1" max="99" step="1" [(ngModel)]="prediction" data-rangeslider>
+                            </section>
+                        </div>
+                    </div>
+                    <div id="roll-game-body">
+                        <div class="row">
+                            <div class="col-md-4 col-6">
+                                <ul>
+                                    <li class="clearfix">
+                                        <p class="payout-name">Payout on win</p>
+                                        <p class="payout-value">{{(sumAmount*98.5/chance) | ethDisplay : 4}}</p>
+                                    </li>
+                                    <hr>
+                                    <li class="clearfix">
+                                        <p class="payout-name">Win chance</p>
+                                        <p class="payout-value">{{chance}}%</p>
+                                    </li>
+                                    <hr>
+                                    <li class="clearfix">
+                                        <p class="payout-name">Multiplier</p>
+                                        <p class="payout-value">{{(98.5/chance) | ethDisplay : 4}}x</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-6" style="margin: auto 0">
+                                <p id="best-amount">Bet Amount</p>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="100" name="amount" [(ngModel)]="sumAmount">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">{{tokenLimmit[selectedToken].name}}</span>
+                                    </div>
+                                </div>
+                                <div class="d-none d-md-block">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary amount-btn" (click)="onClickMulti(2)">x2</button>
+                                        <button type="button" class="btn btn-primary amount-btn" (click)="onClickMulti(0.5)">1/2</button>
+                                        <button type="button" class="btn btn-primary amount-btn" (click)="sumAmount=tokenLimmit[selectedToken].min">Min</button>
+                                        <button type="button" class="btn btn-primary amount-btn" (click)="sumAmount=tokenLimmit[selectedToken].max">Max</button>
+                                        <!-- <button type="button" class="btn btn-primary amount-btn"(click)="runEffect()">Test</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-none col-12">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary amount-btn" (click)="onClickMulti(2)">x2</button>
+                                    <button type="button" class="btn btn-primary amount-btn" (click)="onClickMulti(0.5)">1/2</button>
+                                    <button type="button" class="btn btn-primary amount-btn" (click)="sumAmount=tokenLimmit[selectedToken].min">Min</button>
+                                    <button type="button" class="btn btn-primary amount-btn" (click)="sumAmount=tokenLimmit[selectedToken].max">Max</button>
+                                    <!-- <button type="button" class="btn btn-primary amount-btn"(click)="runEffect()">Test</button> -->
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <p class="best-amount2">ETH Balance<br class="d-none d-md-block">(Switch to other token)</p>
+                                <div class="input-group input-group-res">
+
+                                    <select name="select" [(ngModel)]="selectedToken" (change)="onChangeUnit()" class="input-group-text input-group-text-res">
+										<option  *ngFor="let token of tokenLimmit;let i = index"  value="{{i}}" >{{balance[i] | ethDisplay}} {{token.name}}</option>
+										option
+									</select>
+                                    <p class="textAnimationWin" [class.lose]="extraAmount<0" [class.runAnimation]="runAnimation">{{extraAmount>0?'+':''}}{{extraAmount | ethDisplay}} {{tokenLimmit[selectedToken].name}}</p>
+
+                                    <!-- <input type="text" class="form-control"  placeholder="100" name="amount">
+									<div class="input-group-append">
+										<span class="input-group-text">ETH</span>
+									</div> -->
+                                </div>
+
+                                <button id="roll-btn" type="button" class="btn btn-primary shadow-animate-pink" (click)="onClickRoll()">Roll {{under?'Under':'Over'}} {{prediction}}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-12 diceContainerRight">
+                <div class="dicecontentRight">
+                    <!-- <a class="questionIcon" href="#"><img src="assets/styles/images/ctn-conten-icon7.png"></a> -->
+                    <div class="float-left" style="margin-top: 15px;">
+                        <p class="titleCenter">Total payout: <span [countUp]="totalPayout" [options]="countUpOptions"> {{totalPayout | ethDisplay}}</span> ETH</p>
+                        <p class="titleCenter">Total bet: <span [countUp]="gameHistorylen"> {{gameHistorylen}}</span></p>
+                    </div>
+
+                    <div class="float-right" style="margin-top: 15px;">
+                        <p class="titleCenter">Your Volume: <span [countUp]="user.ethVolume" [options]="countUpOptions"> {{user.ethVolume}}</span> ETH <span [countUp]="user.tokenVolume" [options]="countUpOptions"> {{user.tokenVolume}}</span> DAA</p>
+                        <p class="titleCenter">Game Income: <span [countUp]="user.ethIncome" [options]="countUpOptions"> {{user.ethIncome}}</span> ETH <span [countUp]="user.tokenIncome" [options]="countUpOptions"> {{user.tokenIncome}}</span> DAA</p>
+                    </div>
+
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th class="float-right" style="float: right!important">Wagered</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let citizen of topRank;let i=index">
+                                <td class="playerName playerNameOne" title="{{citizen.address}}">
+                                    <span *ngIf="i<=2">
+										<img *ngIf="i==0" src="assets/images/golden_crown.png">
+										<img *ngIf="i==1" src="assets/images/silver_crown.png">
+										<img *ngIf="i==2" src="assets/images/bronze_crown.png">
+									</span>
+                                    <span *ngIf="i>2">
+										{{i+1}}
+									</span> {{citizen.username!=''?citizen.username:'0x0'}}
+                                </td>
+                                <!-- <td class="payOutValue">414,281,124.00 ETH</td> -->
+                                <td class="payOutValue ">
+                                    <p class="text-sm-right">{{(citizen.totalSpend) | ethDisplay}} ETH</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="diceBetsContainer">
+            <!-- <a class="questionIcon" href="#"><img src="assets/styles/images/ctn-conten-icon7.png"></a> -->
+            <div id="dicebetsHeader">
+                <ul class="nav nav-tabs card-header-tabs dice-bets-part1" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link borderDicebets1" data-toggle="tab" href="#dicebets1" aria-selected="true">My Bets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active show" data-toggle="tab" href="#dicebets2" aria-selected="false">All Bets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#dicebets3" aria-selected="false">High Rollers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link borderDicebets4" data-toggle="tab" href="#dicebets4" aria-selected="false">Rare Wins</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="diceBetsBody">
+                <div class="tab-content">
+                    <div class="tab-pane ctntable-part" id="dicebets1">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Player</th>
+                                <th class="tabledisplayNone1">Prediction</th>
+                                <th class="tabledisplayNone2">Lucky Number</th>
+                                <th class="tabledisplayNone3">Bets</th>
+                                <th class="tabledisplayNone4">Payout</th>
+                            </tr>
+                            <tr *ngFor="let history of myHistory">
+                                <td>{{history.username}}</td>
+                                <td class="tableColor tabledisplayNone1">{{history.prediction_type?'Under':'Over'}} {{history.prediction}}</td>
+                                <td class="tableColor tabledisplayNone2" [class.tableColorRed]="!history.isWin">{{history.result}}</td>
+                                <td class="tableColor tabledisplayNone3">{{history.amount | ethDisplay}} {{history.unit==0?'ETH':''}}{{history.unit==1?'DAA':''}}</td>
+                                <td class="tableColor tabledisplayNone4" *ngIf="history.isWin">{{history.payout | ethDisplay}} {{history.unit==0?'ETH':''}}{{history.unit==1?'DAA':''}}</td>
+                                <td class="tableColor tabledisplayNone4" *ngIf="!history.isWin">-</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane  ctntable-part active" id="dicebets2">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Player</th>
+                                <th class="tabledisplayNone1">Prediction</th>
+                                <th class="tabledisplayNone2">Lucky Number</th>
+                                <th class="tabledisplayNone3">Bets</th>
+                                <th class="tabledisplayNone4">Payout</th>
+                            </tr>
+                            <tr *ngFor="let history of gameHistory">
+                                <td>{{history.username}}</td>
+                                <td class="tableColor tabledisplayNone1">{{history.prediction_type?'Under':'Over'}} {{history.prediction}}</td>
+                                <td class="tableColor tabledisplayNone2" [class.tableColorRed]="!history.isWin">{{history.result}}</td>
+                                <td class="tableColor tabledisplayNone3">{{history.amount | ethDisplay}} {{history.unit==0?'ETH':''}}{{history.unit==1?'DAA':''}}</td>
+                                <td class="tableColor tabledisplayNone4" *ngIf="history.isWin">{{history.payout | ethDisplay}} {{history.unit==0?'ETH':''}}{{history.unit==1?'DAA':''}}</td>
+                                <td class="tableColor tabledisplayNone4" *ngIf="!history.isWin">-</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane  ctntable-part" id="dicebets3">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Player</th>
+                                <th class="tabledisplayNone1">Prediction</th>
+                                <th class="tabledisplayNone2">Lucky Number</th>
+                                <th class="tabledisplayNone3">Bets</th>
+                                <th class="tabledisplayNone4">Payout</th>
+                            </tr>
+                            <tr *ngFor="let history of highRollerHistory">
+                                <td>{{history.username}}</td>
+                                <td class="tableColor tabledisplayNone1">{{history.prediction_type?'Under':'Over'}} {{history.prediction}}</td>
+                                <td class="tableColor tabledisplayNone2" [class.tableColorRed]="!history.isWin">{{history.result}}</td>
+                                <td class="tableColor tabledisplayNone3">{{history.amount | ethDisplay}} {{history.unit==0?'ETH':''}}{{history.unit==1?'DAA':''}}</td>
+                                <td class="tableColor tabledisplayNone4" *ngIf="history.isWin">{{history.payout | ethDisplay}} {{history.unit==0?'ETH':''}}{{history.unit==1?'DAA':''}}</td>
+                                <td class="tableColor tabledisplayNone4" *ngIf="!history.isWin">-</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane  ctntable-part" id="dicebets4">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Player</th>
+                                <th class="tabledisplayNone1">Prediction</th>
+                                <th class="tabledisplayNone2">Lucky Number</th>
+                                <th class="tabledisplayNone3">Bets</th>
+                                <th class="tabledisplayNone4">Payout</th>
+                            </tr>
+                            <tr *ngFor="let history of rareWinsHistory">
+                                <td>{{history.username}}</td>
+                                <td class="tableColor tabledisplayNone1">{{history.prediction_type?'Under':'Over'}} {{history.prediction}}</td>
+                                <td class="tableColor tabledisplayNone2" [class.tableColorRed]="!history.isWin">{{history.result}}</td>
+                                <td class="tableColor tabledisplayNone3">{{history.amount | ethDisplay}} {{history.unit==0?'ETH':''}}{{history.unit==1?'DAA':''}}</td>
+                                <td class="tableColor tabledisplayNone4" *ngIf="history.isWin">{{history.payout | ethDisplay}} {{history.unit==0?'ETH':''}}{{history.unit==1?'DAA':''}}</td>
+                                <td class="tableColor tabledisplayNone4" *ngIf="!history.isWin">-</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

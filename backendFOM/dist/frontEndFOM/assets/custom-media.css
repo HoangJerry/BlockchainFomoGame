@@ -1,0 +1,625 @@
+@media (max-width: 1630px) {
+    #dice #best-amount {
+        margin-bottom: 33px;
+    }
+    #Mydividens .modal-dialog {
+        margin: 7.75rem auto;
+    }
+    #MyRegister .modal-dialog {
+        margin: 7.75rem auto;
+    }
+}
+
+@media (max-width: 1315px) {
+    #Mydividens .modal-dialog {
+        margin: 0.75rem auto;
+    }
+    #MyRegister .modal-dialog {
+        margin: 0.75rem auto;
+    }
+}
+
+@media (max-width: 1300px) {
+    #myNavba ul li a:not(#login):not(#signup) {
+        padding: 45px 15px 0;
+    }
+    #navbarSupportedContentLG ul li a {
+        font-size: 12px;
+    }
+    .headerBotContainer #logo img {
+        /* width: 250px; */
+    }
+    .contentRoundTop div p span {
+        font-size: 35px;
+    }
+    #clock2Span {
+        font-size: 40px;
+    }
+    .buyticket div #buyTicketHeader {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 20px 0;
+    }
+    .parentContentRight {
+        padding-left: 30px;
+    }
+    .chest {
+        padding-left: 125px;
+    }
+    .round-mid-right h1 {
+        font-size: 28px;
+    }
+    .round-mid-left h1 {
+        font-size: 30px;
+    }
+    .footer {
+        margin: 50px 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        margin-top: 85px;
+    }
+    .parentContentRight {
+        padding-left: 30px;
+    }
+    #menuleft {
+        width: 20%;
+    }
+    .parentWith {
+        width: 80%;
+    }
+    #myNavba ul #bar-li-1 a {
+        background: url(images/hd-top-icon1.png) no-repeat center top 10px;
+    }
+    #dice #best-amount {
+        margin-bottom: 30px;
+    }
+    #MyRegister .modal-dialog {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .headerBotContainer #logo img {
+        /* width: 220px; */
+    }
+    .headerBotContainer #logo {
+        display: inline-block;
+        font-size: 20px;
+        /* padding: 15px 0 10px; */
+    }
+    #navbarSupportedContentLG ul li a {
+        padding: 45px 10px 0;
+    }
+    .navloginRight a#signup {
+        padding: 1px 10px;
+    }
+    .navloginRight a#signup:hover {
+        padding: 0 9px;
+    }
+    .navloginRight a#login {
+        padding: 0 15px;
+        margin: 10px;
+    }
+    #roundBotRightbody>ul {
+        padding-bottom: 62px;
+    }
+    #roundBotRightHeader .clock1Span {
+        font-size: 35px;
+    }
+    #roundBotRightHeader .clock1Span img {
+        width: 40px;
+    }
+    #roundBotRightHeader .clock2Span {
+        font-size: 45px;
+    }
+    #roundBotRightHeader .clock2Span img {
+        width: 55px;
+    }
+    #navbarSupportedmenuleft {
+        width: 25%;
+        display: inline-block;
+    }
+    /*dice content*/
+    #dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1143px) {
+    .ctn-tickets {
+        top: 508px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ctn-container button.ToggleFload {
+        float: right;
+        margin: 15px 5px 0;
+    }
+    .wrapper {
+        margin-top: 60px;
+    }
+    .parentContentLeft {
+        display: inline-block;
+        width: 65%;
+        position: fixed;
+        top: 60px;
+        z-index: 998;
+    }
+    .wrapper {
+        padding: 0;
+    }
+    .parentWith {
+        width: auto;
+    }
+    #playerRanking li .payOutValue {
+        display: inline-block;
+    }
+    .contentRoundTop div p span {
+        font-size: 32px;
+    }
+    .collapse.show {
+        display: block !important;
+    }
+    #navbarSupportedmenuleft {
+        display: none;
+        width: 50%;
+    }
+    .navbar-dark .navbar-toggle span img {
+        width: 20px;
+    }
+    .headerTopContainer {
+        padding: 8px 0;
+    }
+    .navbar-dark .navbar-nav>li>a {
+        line-height: 45px;
+    }
+    .headerBotContainer #logo {
+        width: auto;
+    }
+    .navbar-dark .navbar-collapse {
+        width: 100%;
+        float: left;
+        height: calc(535px - 68px); 
+        overflow-y: scroll;
+        border-top: 1px solid #393a3a;
+    }
+    .navbar-dark .navbar-collapse::-webkit-scrollbar {
+        display: none;
+    }
+    .navbar-dark .navbar-nav>li>a {
+        width: 100%;
+        border-bottom: 1px solid #393a3a;
+        border-right: 1px solid #393a3a;
+    }
+    .navbar-nav {
+        margin: 3px 0;
+    }
+    .contentLeft ul {
+        height: 500px;
+        overflow-y: scroll;
+    }
+    .contentLeft ul::-webkit-scrollbar {
+        display: none;
+    }
+    .ctn-tickets {
+        top: 460px;
+    }
+    #dice #best-amount {
+        margin-bottom: 10px;
+    }
+    #Mydividens .modal-dialog {
+        max-width: 85%;
+    }
+    #Myburn .modal-dialog {
+        max-width: 85%;
+    }
+    #Myburn .modal-dialog .modal-content {
+        padding: 30px 0;
+    }
+    .parentContentRight {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .contentRoundTop {
+        margin-left: 0;
+    }
+    .buyticket {
+        margin-left: 0;
+    }
+    .contentRoundMid {
+        margin-left: 0;
+        margin-right: 0px;
+    }
+    .contentBottom {
+        margin: 20px 2px
+    }
+    .contentRoundBot {
+        margin-right: -15px;
+    }
+    .contentLevel {
+        margin-right: -15px;
+        margin-left: 0;
+    }
+    #round1Mid {
+        margin: 0;
+        margin-top: 25px;
+    }
+    #dice .parentWith {
+        padding: 0 15px;
+    }
+    .navloginRight {
+        float: none;
+        text-align: center;
+    }
+    .contentRoundMid #round1Left {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    #round1Top {
+        margin-left: 0px;
+    }
+    #navbarSupportedContentLG {
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+    }
+    #roundBotLeftBody .modal .modal-lg {
+        width: auto;
+    }
+    #dice .diceBetsContainer {
+        width: 103.5%;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .Round-bot-Left h1 {
+        font-size: 26px;
+    }
+    .Round-bot-Left .questionIcon-part1 img{
+        width: 20px;
+        height: 20px;
+    }
+    #masterKey a.questionIcon img{
+        width: 20px;
+        height: 20px;
+    }
+    #kingOfKey a.questionIcon img{
+        width: 20px;
+        height: 20px;
+    }
+    .modal-dialog-help{
+        width: 250px;
+        margin: 75px 15px 0 0;
+        float: right;
+    }
+    .modal-dialog-help .modal-content{
+        border-radius: 8px;
+        background: #161c1f;
+        border: 1px solid #3b4347;
+    }
+    .modal-dialog-help .modal-content .modal-header .close{
+        z-index: 999;
+    }
+}
+
+@media (max-width: 767px) {
+    .ctntable-part .table tr td.tabledisplayNone {
+        display: none;
+    }
+    .ctntable-part .table tr th.tabledisplayNone {
+        display: none;
+    }
+    .buyticket div #buyTicketHeader {
+        font-size: 23px;
+    }
+    .parentWith {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .diceContainer {
+        /*margin-left: -15px;*/
+        /*margin-right: -15px;*/
+    }
+    .Round-bot-right {
+        margin-right: 0;
+    }
+    #navbarSupportedmenuleft {
+        width: 80%;
+    }
+    .Round-bot-right {
+        margin-top: 20px;
+    }
+    /*dice content*/
+    #dice .dicecontentRight .table tbody tr td.playerName {
+        padding: 0.75rem;
+    }
+    /*#dice .ctntable-part .table tr th.tabledisplayNone4{
+		display: none;
+	}#dice .ctntable-part .table tr td.tabledisplayNone4{
+		display: none;
+	}*/
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 h2 {
+        font-size: 1.6rem;
+    }
+    #MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part1 button {
+        width: 35%;
+        font-size: 1.1rem;
+        height: 49px;
+    }
+    #MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part1 input {
+        width: 65%;
+        height: 50px;
+    }
+    #MyRegister .modal-dialog .modal-content {
+        padding: 30px 0;
+    }
+    .parentContentRight {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #dice .parentWith {
+        padding: 0;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 h1{
+        font-size: 2.3rem;
+        padding-bottom: 10px;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 p{
+        font-size: 16px !important;
+        padding-bottom: 15px;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2{
+        padding: 10px 10px 5px;
+    }
+    #MyRegister .modal-dialog .modal-content .modal-header h4.modal-title{
+        font-size: 2.1rem;
+    }
+    .navbar-dark .navbar-collapse{
+        /*height: calc(85vh - 68px);*/
+    }
+    #Myburn .modal-dialog{
+        max-width: 95%;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .chest {
+        padding-left: 0;
+        padding-top: 85px;
+    }
+    #chest1 {
+        background: url(images/chest_01.png) no-repeat;
+        background-size: 75px;
+        background-position-x: center;
+    }
+    #chest1:hover {
+        background: url(images/chest_1_open.png) no-repeat;
+        background-size: 75px;
+        background-position-x: center;
+        background-position-y: -8.5px;
+    }
+    #chest2 {
+        background: url(images/chest_02.png) no-repeat;
+        background-size: 80px;
+        background-position-x: center;
+    }
+    #chest2:hover {
+        background: url(images/chest_2_open.png) no-repeat;
+        background-size: 87px;
+        background-position-x: center;
+        background-position-y: 4.5px;
+    }
+    #chest3 {
+        background: url(images/chest_03.png) no-repeat;
+        background-size: 80px;
+        background-position-x: center;
+    }
+    #chest3:hover {
+        background: url(images/chest_3_open.png) no-repeat;
+        background-size: 82.5px;
+        background-position-x: center;
+        background-position-y: -6px;
+    }
+    #chest4 {
+        background: url(images/chest_04.png) no-repeat;
+        background-size: 80px;
+        background-position-x: center;
+    }
+    #chest4:hover {
+        background: url(images/chest_4_open.png) no-repeat;
+        background-size: 86px;
+        background-position-x: center;
+        background-position-y: -5px;
+    }
+    #subscribe input:first-child {
+        font-size: 15px;
+        padding: 7px 6px;
+    }
+    #subscribe input:last-child {
+        font-size: 15px;
+        padding: 7px 5px;
+    }
+    /*dice content*/
+    #dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 {
+        width: 95%;
+    }
+    #dice #roll-game-header {
+        width: 65%;
+    }
+    #dice #roll-direct-btn {
+        width: 65%;
+    }
+    #dice .diceBetsContainer #diceBetsBody {
+        padding-left: 12px;
+        margin: 0 auto;
+        margin-top: 30px;
+        overflow-x: hidden;
+        text-align: center;
+    }
+    #dice .diceBetsContainer #diceBetsBody::-webkit-scrollbar {
+        height: 6px;
+        background-color: #F5F5F5;
+    }
+     .contentRoundTop {
+        background: url(images/bn-bg2.png) transparent no-repeat center;
+        background-size: 100% 100%;
+    }
+   
+}
+
+@media (max-width: 575px) {
+    .contentRoundTop hr.hr-display{
+        display: inline-block;
+    }
+    .navbar-dark .navbar-collapse{
+        /*height: calc(80vh - 68px);*/
+    }
+}
+@media (max-width: 550px) {
+    #dice #roll-game-header p {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 520px) {
+    #Mydividens .modal-dialog .modal-content .modal-footer .ctn-fom-dividens-part {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+@media (max-width: 500px) {
+    .round-mid-left {
+        width: 100%;
+    }
+    .round-mid-right {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .round-mid-right p {
+        text-align: center;
+        float: none;
+    }
+    .round-mid-left {
+        float: none;
+        text-align: center;
+    }
+    .parentContentLeft {
+        width: 75%;
+    }
+    #MyRegister .modal-dialog {
+        max-width: 85%;
+    }
+    #MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part1 button {
+        width: 40%;
+        font-size: 1rem;
+        height: 48px;
+    }
+    #MyRegister .modal-dialog .modal-content .modal-body .ctn-register-body-part1 input {
+        width: 60%;
+        height: 48px;
+        font-size: 1rem;
+    }
+    .contentRoundTop div p span {
+        font-size: 26px;
+    }
+    #dice #roll-game-header {
+        width: 73%;
+    }
+    #dice .headerBotContainer #logo img {
+        width: 260px;
+    }
+    #dice .headerBotContainer {
+        min-height: 70px;
+    }
+    #dice .ctn-container button.ToggleFload {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .headerBotContainer #logo {
+        width: 100%;
+        text-align: left;
+    }
+    .navbar-dark .navbar-toggle {
+        float: left;
+    }
+    .parentContentLeft {
+        width: 100%;
+        position: none;
+    }
+    .playerName span {
+        width: 22px;
+    }
+    #navbarSupportedmenuleft {
+        width: 100%;
+    }
+    #dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li a.active {
+        font-weight: 500
+    }
+    #dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li a:hover {
+        font-weight: 500
+    }
+}
+
+@media (max-width: 415px) {
+    #subscribe input:last-child {
+        margin-top: 10px;
+        border-radius: 4px;
+    }
+    #dice #roll-game-header h1 {
+        font-size: 84px;
+    }
+    #dice #roll-game-header p {
+        font-size: 14px;
+    }
+    #dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li a {
+        font-size: 13px;
+    }
+    #roll-under-btn,
+    #roll-over-btn {
+        font-size: 13px;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 h2{
+        font-size: 1.3rem;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 h1{
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-toggler-icon {
+        width: 1rem;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 h2{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    #dice .diceBetsContainer #dicebetsHeader .dice-bets-part1 li a {
+        font-size: 12px;
+    }
+    #levelBody>div>div>p {
+        font-size: 12px;
+    }
+    .ctn-daily-part .ctn-part-right h3 {
+        text-align: left;
+    }
+    .headerBotContainer #logo {
+        font-size: 17px;
+    }
+    .roundBotLeftBodyBottom ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) and (min-width: 320px) {}
+
+@media (max-width: 320px) {
+}

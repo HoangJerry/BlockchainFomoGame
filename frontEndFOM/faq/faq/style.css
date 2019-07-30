@@ -1,0 +1,54 @@
+.list-fqas-page {
+    padding: 15px;
+    height: auto;
+    background: #123444;
+    border-radius: 0.25rem;
+    color: white;
+  }
+  .list-fqas-page .title {
+    text-align: center;
+    margin: 15px 0 10px 0;
+    color: #1EBD80;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .list-fqas-page .sub-title {
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+  }
+  .list-fqas-page #accordion .custom-card {
+    background: #123444;
+  }
+  .list-fqas-page #accordion .custom-card-header {
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 0 !important;
+    color: white !important;
+    background: #1B485D ;
+  }
+  .list-fqas-page #accordion .custom-card-header h5 label {
+      margin: 0 !important;
+  }
+  .list-fqas-page #accordion .custom-card-body {
+    margin-bottom: 15px;
+    background: black;
+  }
+  .list-fqas-page #accordion label {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+  }
+  .list-fqas-page #accordion label:hover {
+    cursor: pointer;
+  }
+
+  .color-title-question-default {
+      background: #1B485D !important
+  }
+
+  .color-title-question-active {
+    background: none;
+    background: #159863 !important
+  }
+  

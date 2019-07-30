@@ -1,0 +1,40 @@
+#player-table {
+    background-color: #151c1f;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    margin-top: -10px;
+}
+
+#player-table h1 {
+    font-size: 40px;
+    color: #2ee2ba;
+    font-weight: bold;
+    margin: 0px;
+    padding: 55px 15px 30px;
+}
+
+#player-table #table-top {
+    margin-right: 0;
+}
+
+#player-table #search-part {
+    position: relative;
+}
+
+.dabanking-part1 {
+    float: left;
+    margin-right: 50px;
+}
+
+.dabanking-part2 {
+    float: left;
+}
+
+#player-table #search-part {
+    position: relative;
+}
+
+#player-table #json-table th {
+    padding: 0px 7px;
+}

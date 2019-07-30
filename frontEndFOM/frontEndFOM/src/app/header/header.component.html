@@ -1,0 +1,257 @@
+<div class="headerContainer">
+    <div class="container-fluid">
+        <nav class="headerBotContainer navbar navbar-expand-lg navbar-dark">
+            <div class="ctn-container">
+                <a routerLink="" title="" id="logo" class="navbar-brand col-lg-3 col-5"><img src="assets/images/logo.png" alt="home" (click)="onClickShowing(null)">DABANKING</a>
+                <button class="navbar-toggler ToggleFload" type="button" (click)="onClickShowing('navbar')">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
+                <button class="navbar-toggler ToggleFload" type="button" (click)="onClickShowing('topRank')">
+			        <span><img style="width: 25px;margin: 7px 0px;" src="assets/images/icon-head.png"></span>
+			    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContentLG" [ngbCollapse]="showNav != 'navbar'" style="-webkit-overflow-scrolling: touch !important;">
+                    <ul class="navbar-nav mr-auto row">
+                        <li class="nav-item" id="bar-li-1"><a [ngClass]="{active: activeRoute('/')}" routerLink="" (click)="onClickShowing('navbar')">FOMO</a></li>
+                        <li class="nav-item" id="bar-li-2"><a [ngClass]="{active: activeRoute('dice')}" routerLink="/dice" (click)="onClickShowing('navbar')">DICE</a></li>
+                        <li class="nav-item" id="bar-li-4"><a [routerLink]="" (click)="onClickCommingSoon()">DUEL</a></li>
+                        <li class="nav-item" id="bar-li-3"><a [routerLink]="" (click)="onClickCommingSoon()">WATCH</a></li>
+                        <li class="nav-item" id="bar-li-5" (click)="loadDividendTab()"><a [routerLink]="" data-toggle="modal" data-target="#Mydividens">DIVIDEND</a></li>
+                        <!-- <li class="nav-item" id="bar-li-6"><a href="https://dabanking.io/">MINING DAB</a></li> -->
+                        <li class="nav-item" id="bar-li-6"><a href="https://dabanking.io/" >MINING DAB</a></li>
+                        <li ngbDropdown class="nav-item nav-modal-deplay-block" id="bar-li-7" placement="bottom-center">
+                            <a [routerLink]="" id="dropdownBasic1" ngbDropdownToggle>HELP</a>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu dropdown-menu-help" style="">
+                                <a class="clickable" ngbDropdownItem href="https://t.me/DABANKINGOFFICIAL" target="_blank">Telegram Group</a>
+                                <a class="clickable" ngbDropdownItem href="https://discord.gg/uqfMjYV">Discord Group</a>
+                                <a class="clickable" ngbDropdownItem href="/static/whitepaper.pdf" target="_blank">Whitepaper</a>
+                                <a class="clickable" ngbDropdownItem href="https://hackmd.io/s/r1wrpBSTN" target="_blank">English Documents</a>
+                                <a class="clickable" ngbDropdownItem href="https://hackmd.io/s/SJv8RSSTN" target="_blank">Chinese Documents</a>
+                                <a class="clickable" ngbDropdownItem href="https://hackmd.io/s/B1kxRHrT4" target="_blank">Japanese Documents</a>
+                                <a class="clickable" ngbDropdownItem href="https://hackmd.io/s/SyabCSraV" target="_blank">Korean Documents</a>
+                                <a class="clickable" ngbDropdownItem href="https://hackmd.io/s/H1wzRSHaE" target="_blank">Russian Documents</a>
+                                <a class="clickable" ngbDropdownItem href="https://etherscan.io/address/0xF9b540d1104e46E22Bde406F422cd152f205E523" target="_blank">DAA Contract</a>
+                                <a class="clickable" ngbDropdownItem href="https://etherscan.io/address/0xACe024458674fe19C02c15624e4aFEfaD71b60B6" target="_blank">Citizen Contract</a>
+                                <a class="clickable" ngbDropdownItem href="https://etherscan.io/address/0x605d4f1086a552e9d325D0ef9bebC434BE4B518c" target="_blank">Citizen Storage Contract</a>
+                                <a class="clickable" ngbDropdownItem href="https://etherscan.io/address/0x3d2C1A6f5F6ad142df6090d0789414e2e1DF5E0f" target="_blank">Ticket Contract</a>
+                                <a class="clickable" ngbDropdownItem href="https://etherscan.io/address/0x7ff7c62260df44A8AaEFE4969d416ea6225f447B" target="_blank">Dice Contract</a>
+                                <a class="clickable" ngbDropdownItem [routerLink]="['/data']">Database</a>
+                            </div>
+                        </li>
+                        <li ngbDropdown class="nav-item nav-modal-deplay-none" id="bar-li-7" placement="bottom-center">
+                            <a [routerLink]="" href="#" data-toggle="modal" data-target="#myModalHelp" (click)="onClickHelp()" id="dropdownBasic1" ngbDropdownToggle>HELP</a>
+
+                            <!-- Modal -->
+                            <div id="myModalHelp" class="modal fade" role="dialog" *ngIf="dividendTab!=undefined" style="-webkit-overflow-scrolling: touch !important;">
+                                <div class="modal-dialog modal-dialog-help">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="menu-help-modal">
+                                                <a class="clickable" href="https://t.me/DABANKINGOFFICIAL" target="_blank">Telegram Group</a>
+                                                <a class="clickable" href="https://discord.gg/uqfMjYV">Discord Group</a>
+                                                <a class="clickable" href="/static/whitepaper.pdf" target="_blank">Whitepaper</a>
+                                                <a class="clickable" href="https://hackmd.io/s/r1wrpBSTN" target="_blank">English Documents</a>
+                                                <a class="clickable" href="https://hackmd.io/s/SJv8RSSTN" target="_blank">Chinese Documents</a>
+                                                <a class="clickable" href="https://hackmd.io/s/B1kxRHrT4" target="_blank">Japanese Documents</a>
+                                                <a class="clickable" href="https://hackmd.io/s/SyabCSraV" target="_blank">Korean Documents</a>
+                                                <a class="clickable" href="https://hackmd.io/s/H1wzRSHaE" target="_blank">Russian Documents</a>
+                                                <a class="clickable" href="#">DAA Contract</a>
+                                                <a class="clickable" href="#">Citizen Contract</a>
+                                                <a class="clickable" href="#">Citizen Storage Contract</a>
+                                                <a class="clickable" href="#">Ticket Contract</a>
+                                                <a class="clickable" href="#">Dice Contract</a>
+                                                <a class="clickable" [routerLink]="['/data']">Database</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+                        </li>
+
+                        <li class="nav-item" id="bar-li-9"><a routerLink="/faq">FAQ</a></li>
+
+                    </ul>
+                    <div class="navloginRight">
+                        <!-- <a href="#" id="login">login</a> -->
+                        <a *ngIf="!isLogin" href="#" id="wellcome" routerLink="" data-toggle="modal" data-target="#MyRegister">SIGNUP</a>
+                        <!-- <a *ngIf="!isLogin" href="#" id="wellcome" [routerLink]="" (click)="onClickCommingSoon()">SIGNUP</a> -->
+                        <a *ngIf="isLogin" [routerLink]="" id="wellcome">WELCOME {{username}}</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="Mydividens" class="modal fade" role="dialog" *ngIf="dividendTab!=undefined" style="-webkit-overflow-scrolling: touch !important;">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                    <a routerLink="" style="text-decoration: none;color:#fff; font-weight: 800;"><img src="assets/images/logo.png" alt="home" width="100px"><br>DABANKING</a>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="ctn-dividens-body-part1">
+                    <!-- <h1>Stage {{dividendTab.currentLevel}}-{{dividendTab.currentRound}} (Win {{dividendTab.currentLevelWin}} ETH, or lose game and buy ticket {{dividendTab.currentLevelLose}} ETH to mine 1 DAA)</h1> -->
+                    <h1>Stage {{dividendTab.currentRound}}-{{dividendTab.currentLevel}} (Buy ticket or lose game {{dividendTab.currentLevelLose}} ETH to mine 1 DAA and win game {{dividendTab.currentLevelWin}} ETH to mine 1 DAA</h1>
+
+                    <div class="ctn-body-from">
+                        <div class="progress">
+                            <div title="{{dividendTab.totalSupplyByLevel}}" class="progress-bar" [style.width.%]="dividendTab.totalSupplyByLevel/dividendTab.HARD_TOTAL_SUPPLY_BY_LEVEL*100" role="progressbar" aria-valuenow="200" aria-valuemin="0" aria-valuemax="200000">
+                            </div>
+                        </div>
+                        <div style="position: absolute;margin-left: auto;margin-right: auto;    left: 0; top: 5px;  right: 0; font-size: 20px;">{{dividendTab.totalSupplyByLevel | ethDisplay }}/{{dividendTab.HARD_TOTAL_SUPPLY_BY_LEVEL | ethDisplay }}</div>
+
+                        <span></span>
+                        <script src="assets/jquery.min.js"></script>
+                        <script src="assets/progress.js"></script>
+                    </div>
+                    <h1>Next stage {{dividendTab.nextRound}}-{{dividendTab.nextLevel}} (Buy ticket or lose game {{dividendTab.nextLevelLose}} ETH to mine 1 DAA and win game {{dividendTab.nextLevelWin}} ETH to mine 1 DAA)</h1>
+                </div>
+                <div class="ctn-dividens-body-part2" data-dismiss="modal">
+                    <a routerLink="" data-dismiss="modal" data-toggle="modal" data-target="#Myburn" class="ctn-burn">
+                        <img src="assets/images/burn-icon.png">
+                        <h3>burn</h3>
+                    </a>
+                    <h2>Available Dividends</h2>
+                    <h1>{{dividendTab.currentRoundDividendEth | ethDisplay}} ETH</h1>
+                    <p>A total of <span>{{dividendTab.totalFrozenBalance | usdDisplay}} DAA </span>is frozen across the network - You will receive <span> {{dividendTab.totalFrozenBalance==0?dividendTab.currentRoundDividendEthForCitizen:user.tokenFreezing*dividendTab.currentRoundDividendEthForCitizen/dividendTab.totalFrozenBalance | ethDisplay}} ETH</span></p>
+                    <p style="font-size: 25px"><img src="assets/images/divi-icon1.png" width="20px">Dividends Countdown: {{dividendTab.endRoundTimeShow}}</p>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <div class="ctn-fom-dividens-part">
+                    <h1>Your Wallet</h1>
+                    <input type="text" [ngModel]="user.tokenDepositPending | ethDisplay" name="fomTest" (ngModelChange)="user.tokenDepositPending = $event">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="onClickDepositToken();" [disabled]="username==undefined">Deposit</button>
+                </div>
+                <div class="ctn-fom-dividens-part">
+                    <h1>Available</h1>
+                    <input type="text" [ngModel]="user.tokenDeposit | ethDisplay" name="fomTest" disabled>
+                    <button type="button" class="btn" data-dismiss="modal" (click)="onClickWithdrawToken();" [disabled]="user.tokenDeposit<=0||username==undefined">Withdraw</button>
+                </div>
+                <div class="ctn-fom-dividens-part">
+                    <h1>Your Wallet</h1>
+                    <input type="text" [ngModel]="user.tokenFreeze | ethDisplay" (ngModelChange)="user.tokenFreeze = $event" name="fomTest">
+                    <button type="button" class="btn btn-primary" (click)="onClickFreezeToken();" data-dismiss="modal" [disabled]="username==undefined">Freeze</button>
+                </div>
+                <div class="ctn-fom-dividens-part">
+                    <h1>Frozen</h1>
+                    <input type="text" [ngModel]="user.tokenFreezing | ethDisplay" name="fomTest" disabled>
+                    <button type="button" class="btn " data-dismiss="modal" (click)="onClickUnfreezeToken();" [disabled]="user.tokenFreezing<=0||username==undefined">Unfreeze</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- content burn -->
+<div id="Myburn" class="modal fade" role="dialog" *ngIf="burnTab!=undefined" style="-webkit-overflow-scrolling: touch !important;">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><img src="assets/images/burn-icon.png">Burn</h4>
+            </div>
+            <div class="modal-body">
+                <div class="ctn-burn-body-part1">
+                    <!-- <a href="#" class="ctn-burn"><img src="assets/images/ctn-conten-icon7.png"></a> -->
+                    <h2>Wager Burn Pool</h2>
+                    <h1>{{burnTab.totalToken | ethDisplay }} DAA</h1>
+                    <p>DAA in burn pool is not entitled for dividends and will disappear forever after burnt. DAA burn will happen every 2 weeks. </p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="ctn-burn-body-part1">
+                    <!-- <a href="#" class="ctn-burn"><img src="assets/images/ctn-conten-icon7.png"></a> -->
+                    <h2>Burnt DAA</h2>
+                    <h1>{{burnTab.totalTokenBurned | ethDisplay }} DAA</h1>
+                    <!-- <p>When DAA is burned from the pool, FomoBanking team will simultaneously burn our DAA at a 6:4 ratio. Every month, FomoBanking team will use 20% of monthly profit to buy back DAA from the secondary market and burn.</p> -->
+                    <p>When DAA is burned from the pool, team DABANKING will simultaneously burn our DAA at a 6:4 ratio</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="ctn-burn-body-part1">
+                    <h2>DAA Burnt Log</h2>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Time</th>
+                            <th>From</th>
+                            <th>Quantity</th>
+                            <th>Hash</th>
+                        </tr>
+                        <ng-container *ngFor="let history of burnTab.history | slice: (burnPage-1) * 10 : (burnPage-1) * 10 + 10">
+                            <ng-container *ngIf="history!=undefined">
+                                <tr>
+                                    <td>{{history.date | date }}</td>
+                                    <td>{{history.from==DAAContract?'DAAContract':'Dev'}}</td>
+                                    <td class="tableColor">{{history.value | ethDisplay}} DAA</td>
+                                    <td><a style="color: #fff; text-decoration: none;" target="_blank" rel="noopener noreferrer" href="https://ropsten.etherscan.io/tx/{{history.txhash}}">{{history.txhash | shortDisplay}}</a></td>
+                                </tr>
+                            </ng-container>
+                        </ng-container>
+                    </table>
+                    <ngb-pagination [collectionSize]="burnTab.history.length" [maxSize]="5" [(page)]="burnPage" class="d-flex justify-content-end"></ngb-pagination>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="MyRegister" class="modal fade" role="dialog" style="-webkit-overflow-scrolling: touch !important;">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Engrave Your Username To The Blockchain</h4>
+            </div>
+            <div class="modal-body">
+                <div class="ctn-register-body-part1">
+                    <button type="button" class="btn " (click)="onClickRandomName()">Randomize</button>
+                    <input [(ngModel)]="register.username" type="text" name="username" placeholder="TYPE HERE..." (change)="uppercaseUsername();">
+                </div>
+                <div class="ctn-register-body-part2">
+                    <h1>Username must follow these rules:</h1>
+                    <ul>
+                        <li>Must be unique</li>
+                        <li>4 to 18 Characters</li>
+                        <li>A-Z (uppercase)</li>
+                        <li>Cannot start with number</li>
+                        <li>No special characters</li>
+                        <li>No space between characters</li>
+                    </ul>
+                    <p>If one of these criteria is not satisfied, the registration will fail.</p>
+                    <p>Your username will exsist forever.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn " (click)="onClickRegister()" data-dismiss="modal">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-side-bar class="collapse parentContentLeft" id="topRank" [ngbCollapse]="showNav != 'topRank'" style="-webkit-overflow-scrolling: touch !important;"></app-side-bar>

@@ -1,0 +1,10 @@
+django==2.1.5
+Pillow
+djangorestframework
+django-cors-headers
+django-crontab
+web3
+#-U channels
+# pip install -U channels_redis
+pyOpenSSL
+django-cors-headers

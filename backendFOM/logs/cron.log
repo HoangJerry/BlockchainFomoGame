@@ -1,0 +1,317 @@
+Failed to complete cronjob at ('0 0 */1 * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+TypeError: end_divident() missing 1 required positional argument: 'self'
+Failed to complete cronjob at ('0 0 */1 * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+TypeError: end_divident() missing 1 required positional argument: 'self'
+Failed to complete cronjob at ('0 0 */1 * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+TypeError: end_divident() missing 1 required positional argument: 'self'
+Failed to complete cronjob at ('0 0 */1 * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+TypeError: end_divident() missing 1 required positional argument: 'self'
+Failed to complete cronjob at ('0 0 */1 * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+TypeError: end_divident() missing 1 required positional argument: 'self'
+Failed to complete cronjob at ('0 0 */1 * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+TypeError: end_divident() missing 1 required positional argument: 'self'
+Failed to complete cronjob at ('0 0 */1 * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+TypeError: end_divident() missing 1 required positional argument: 'self'
+Failed to complete cronjob at ('0 0 */1 * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+TypeError: end_divident() missing 1 required positional argument: 'self'
+Failed to complete cronjob at ('0 */3 * * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: table contract_endrounddividend has no column named creation_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/fomo2moon-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/fomo2moon-core/backendFOM/contract/crons.py", line 27, in end_divident
+    EndRoundDividend.objects.create(tx_hash=tx_hash.hex())
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: table contract_endrounddividend has no column named creation_date
+Failed to complete cronjob at ('0 */3 * * *', 'contract.crons.end_divident', '>> /opt/fomo2moon-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: table contract_endrounddividend has no column named creation_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/fomo2moon-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/fomo2moon-core/backendFOM/contract/crons.py", line 27, in end_divident
+    EndRoundDividend.objects.create(tx_hash=tx_hash.hex())
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/opt/fomo2moon-core/backendFOM/env/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: table contract_endrounddividend has no column named creation_date
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+Failed to complete cronjob at ('5 17,20,23,2,5,8,11,14 * * *', 'contract.crons.end_divident', '>> /opt/daa-core/backendFOM/logs/cron.log 2>&1')
+Traceback (most recent call last):
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 29, in end_divident
+    raise e
+  File "/opt/daa-core/backendFOM/contract/crons.py", line 26, in end_divident
+    tx_hash = web3.eth.sendRawTransaction(signed.rawTransaction)
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/eth.py", line 275, in sendRawTransaction
+    [raw_transaction],
+  File "/opt/daa-core/backendFOM/nev/lib/python3.6/site-packages/web3/manager.py", line 112, in request_blocking
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'replacement transaction underpriced'}
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+:0: UserWarning: You do not have a working installation of the service_identity module: 'No module named 'service_identity''.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.

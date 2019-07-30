@@ -1,0 +1,26 @@
+<div class="contentLeft clearfix">
+	<p class="titleCenter">Members Ranking</p>
+	<div class="clearfix">
+		<p id="playerTitle">Members</p>
+		<p id="payOutTitle">Total Volume</p>
+	</div>
+	<hr id="underTitle">
+	<ul class="clearfix" id="playerRanking">
+		<li *ngFor="let citizen of topRank;let i = index;">
+			<!-- <span *ngIf="citizen.address!='0x0000000000000000000000000000000000000000'"> -->
+				<p class="playerName playerNameOne" title="{{citizen.address}}">
+				<span *ngIf="i<=2">
+					<img *ngIf="i==0" src="assets/images/golden_crown.png">
+					<img *ngIf="i==1" src="assets/images/silver_crown.png">
+					<img *ngIf="i==2" src="assets/images/bronze_crown.png">
+				</span>
+				<span *ngIf="i>2">
+					{{i+1}}
+				</span>
+				{{citizen.username!=''?citizen.username:'0x0'}}</p>
+			<p class="payOutValue">{{citizen.totalSpend | ethDisplay}} ETH</p>
+			<!-- </span> -->
+			
+		</li>
+	</ul>
+</div>

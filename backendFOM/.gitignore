@@ -1,0 +1,8 @@
+*.pyc
+db.sqlite3
+settings_local.py
+migrations
+/env/
+/nev/
+/static/
+

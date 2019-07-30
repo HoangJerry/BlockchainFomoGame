@@ -1,0 +1,160 @@
+#wellcome {
+    padding: 5px 15px;
+    text-decoration: none;
+    line-height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    background: #ff5454;
+    border: 1px solid #ffa05a;
+}
+
+#bar-li-7 .dropdown-menu {
+    background-color: #252b2e;
+    color: #fff;
+    box-shadow: 5px 5px 12px 0px #00000054;
+    border: 0.5px solid #3f5763;
+}
+
+#bar-li-7 .dropdown-menu .dropdown-item {
+    color: #2ee2ba;
+    padding: .25rem 1.5rem;
+}
+
+#bar-li-7 .dropdown-menu .dropdown-item:hover {
+    color: #2ee2ba;
+    background-color: #151c1f;
+}
+
+.modal {
+    overflow-y: auto
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+.headerBotContainer #logo img {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.progress {
+    height: 2rem;
+}
+
+#topRank {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #3b4449;
+    box-shadow: 4px 4px 4px #101010a8;
+}
+#navbarSupportedContentLG ul li.nav-modal-deplay-block{
+    display: inline-block;
+}
+#navbarSupportedContentLG ul li.nav-modal-deplay-none{
+    display: none;
+}
+.menu-help-modal{
+    width: 100%;
+    margin-top: -35px;
+}
+.menu-help-modal a{
+    width: 100%;
+    padding: 5px 0 !important;
+    display: inline-block;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.menu-help-modal a:hover{
+    color: #70e3bb;
+}
+@media (max-width: 991px) {
+    #bar-li-7 .dropdown-menu {
+        display: none;
+    }
+    #bar-li-7 .dropdown-menu .dropdown-item {
+        font-size: 18px;
+    }
+    .contentLeft ul {
+        height: 60vh;
+    }
+    #wellcome {
+        line-height: 38px;
+        width: 68%;
+        display: inline-block;
+        margin: 20px 0px;
+    }
+    .headerBotContainer #logo img {
+        width: 40px;
+        margin: 8px 5px;
+    }
+    #navbarSupportedContentLG ul li:nth-child(even) {
+        width: 50%;
+        float: right;
+    }
+    #navbarSupportedContentLG ul li:nth-child(odd) {
+        width: 50%;
+        float: left;
+    }
+    #navbarSupportedContentLG .navbar-nav {
+        flex-direction: unset;
+    }
+    #navbarSupportedContentLG ul li.nav-modal-deplay-block{
+        display: none;
+    }
+    #navbarSupportedContentLG ul li.nav-modal-deplay-none{
+        display: inline-block;
+    }
+}
+@media (max-width: 767px) {
+    #Mydividens .modal-dialog .modal-content .modal-header h4.modal-title{
+        display: none;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part1{
+        margin-top: -50px;
+    }
+    #Mydividens .modal-dialog .modal-content{
+        padding: 30px 0;
+    }
+    #Mydividens{
+        padding-left: 0 !important;
+    }
+    #Mydividens .modal-dialog{
+        max-width: 95%;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part1 h1{
+        margin: 5px 0 15px;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 .ctn-burn{
+        width: 50px;
+        height: 50px;
+        right: 0;
+        top: 0;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 .ctn-burn img{
+        width: 42%;
+        height: 60%;
+        margin-top: -35px;
+        margin-right: -2px;
+    }
+    #Mydividens .modal-dialog .modal-content .modal-body .ctn-dividens-body-part2 .ctn-burn h3{
+        margin-top: -36px;
+        font-size: 0.7rem;
+        margin-right: -3px;
+    }
+    #Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 h2{
+        font-size: 20px;
+    }
+    #Myburn .modal-dialog .modal-content .modal-body .ctn-burn-body-part1 h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 500px) {
+     #bar-li-7 .dropdown-menu .dropdown-item {
+        font-size: 14px;
+    }
+}

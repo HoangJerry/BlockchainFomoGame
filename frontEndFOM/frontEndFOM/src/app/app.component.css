@@ -1,0 +1,31 @@
+.button-group {
+    position: fixed;
+    overflow: hidden;
+    width: 400px;
+    bottom: 5px;
+    left: 5px;
+}
+
+.btn-color-1 {
+    display: inline-block;
+    margin: 5px 5px;
+    font-weight: bold;
+    border: 1px solid #1cc09b;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px 10px;
+    background: #11896e;
+    border-radius: 4px;
+}
+
+.btn-color-2 {
+    display: inline-block;
+    margin: 5px 5px;
+    font-weight: bold;
+    border: 1px solid #1cc09b;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px 10px;
+    background: #252b2e;
+    border-radius: 4px;
+}

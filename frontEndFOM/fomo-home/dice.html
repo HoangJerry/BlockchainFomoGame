@@ -1,0 +1,1082 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Work+Sans:300,400,700" rel="stylesheet">
+	font-family: 'Work Sans', sans-serif;
+	font-family: 'Raleway', sans-serif; -->
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link href='styles/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href='styles/custom.css' rel='stylesheet' type='text/css'>
+	<!-- <script src='styles/jquery.js' type='text/javascript'></script> -->
+	<script src='styles/jquery-3.2.1.slim.min.js' type='text/javascript'></script>
+	<script src='styles/popper.min.js' type='text/javascript'></script>
+	<script src='styles/bootstrap.min.js' type='text/javascript'></script>
+	<link rel="stylesheet" type="text/css" href="styles/rangeslider.css">
+	<link href='styles/custom-media.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="dice">
+	<div class="headerContainer">
+		<div class="container-fluid">
+			<nav class="headerBotContainer navbar navbar-expand-lg navbar-dark">
+				<div class="ctn-container">
+					<a href="#" title="" id="logo" class="navbar-brand .col-lg-3"><img src="styles/images/logo.png" alt="home"></a>
+					<button class="navbar-toggler ToggleFload" type="button" data-toggle="collapse" data-target="#navbarSupportedContentLG" aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<button class="navbar-toggler ToggleFload" type="button" data-toggle="collapse" data-target="#navbarSupportedmenuleft" aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
+						<span><img src="styles/images/rank.png"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContentLG">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item" id="bar-li-1"><a class="active" href="index.html" >FOMO</a></li>
+							<li class="nav-item" id="bar-li-2"><a href="dice.html" >DICE</a></li>
+							<li class="nav-item" id="bar-li-3"><a href="#" >WATCH</a></li>
+							<li class="nav-item" id="bar-li-4"><a href="#" >DUEL</a></li>
+							<li class="nav-item" id="bar-li-5"><a href="#" data-toggle="modal" data-target="#Mydividens">Dividens</a></li>
+							<li class="nav-item" id="bar-li-6"><a href="#" >Profile</a></li>
+							<li class="nav-item" id="bar-li-7"><a href="#" >Help</a></li>
+							<li class="nav-item" id="bar-li-8"><a href="#" >Telegram</a></li>
+
+						</ul>
+						<div class="navloginRight">
+							<a href="#" id="login">login</a>
+							<a href="#" id="signup">signup</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!--  conten Dividens-->
+	<!-- Modal -->
+	<div id="Mydividens" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title"><a href="#"><img src="styles/images/logo.png" alt="home"></a></h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="ctn-dividens-body-part1">
+	        	<h1>Stage 7-9 (Play 123 ETH to mine 1 FOM)</h1>
+	        	<div class="ctn-body-from">
+	        		
+	        	</div>
+	        	<h1>Next stage (Play 123 ETaH to mine 1 FOM)</h1>
+	        </div>
+	        <div class="ctn-dividens-body-part2">
+	        	<a href="#" class="ctn-burn">
+	        		<img src="styles/images/burn-icon.png">
+	        		<h3>burn</h3>
+	        	</a>
+	        	<h2>Available Dividends</h2>
+	        	<h1>1234.00 ETH</h1>
+	        	<p>A total of <span>65,592,360.29 FOM </span>is frozen across the network - You will receive <span> 0 FOM</span></p>
+	        	<p><img src="styles/images/divi-icon1.png">Dividends Countdown: 11:58:50</p>
+	        </div>
+
+	      </div>
+	      <div class="modal-footer">
+	      	<div class="ctn-fom-dividens-part">
+	      		<h1>Available</h1>
+	      		<input type="text" name="fomTest" value="0 FOM">
+	        	<button type="button" class="btn ">Withdraw</button>
+	      	</div>
+	      	<div class="ctn-fom-dividens-part">
+	      		<h1>Withdraw</h1>
+	      		<input type="text" name="fomTest" value="0 FOM">
+	        	<button type="button" class="btn btn-primary">Freeze</button>
+	      	</div>
+	      	<div class="ctn-fom-dividens-part">
+	      		<h1>Available</h1>
+	      		<input type="text" name="fomTest" value="0 FOM">
+	        	<button type="button" class="btn ">Withdraw</button>
+	      	</div>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+	<div class="wrapper myWrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-12 collapse navbar-collapse parentContentLeft" id="navbarSupportedmenuleft">
+					<div class="contentLeft clearfix">
+						<p class="titleCenter">Players Ranking</p>
+						<div class="clearfix">
+							<p id="playerTitle">Player</p>
+							<p id="payOutTitle">Payout</p>
+						</div>
+						<hr id="underTitle">
+						<ul class="clearfix" id="playerRanking">
+							<li>
+								<p class="playerName playerNameOne"><span><img src="styles/images/golden_crown.png"></span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span><img src="styles/images/silver_crown.png"></span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span><img src="styles/images/bronze_crown.png"></span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>2</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>3</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>4</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>5</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>6</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>7</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>8</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>9</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>10</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>11</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>12</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>13</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+							<li>
+								<p class="playerName"><span>1</span>Lvl. 99 InTheCrowd</p>
+								<p class="payOutValue">414,281,124.00 ETH</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-12 parentWith">
+					<div class="diceContainer">
+						<div class="row">
+							<div class="col-xl-7 col-lg-12 ctn-diceRollLeft">
+								<div id="roll-game">
+									<a class="questionIcon" href="#">
+										<img src="styles/images/ctn-conten-icon7.png">
+									</a>
+									<div id="roll-game-bg">
+										<div id="roll-game-header" class="row">
+											<div class="col-6 col-sm-6">
+												<h1></h1>
+												<p>Prediction</p>
+											</div>
+											<div class="col-6 col-sm-6">
+												<h1>00</h1>
+												<p>Lucky Number</p>
+											</div>
+										</div>
+										<div id="roll-direct-btn" class="row">
+											<div class="col-6 col-sm-6">
+												<button id="roll-under-btn" class="btn btn-success">Roll Under</button>
+											</div>
+											<div class="col-6 col-sm-6">
+												<button id="roll-over-btn" class="btn btn-success">Roll Over</button>
+											</div>
+										</div>
+										<div id="roll-game-range">
+											<section id="top"> 
+												<input id="input-ranger" type="range" min="0" max="99" step="1" value="50" data-rangeslider> 
+												<output id="js-output"></output>
+											</section>
+										</div>
+
+										<script src="styles/jquery.min.js"></script> 
+										<script src="styles/rangeslider.min.js"></script> 
+										<script src="styles/textbanner.js" type="text/javascript"></script>
+									</div>
+									<div id="roll-game-body">
+										<div class="row">
+											<div class="col-md-4">
+												<ul>
+													<li class="clearfix">
+														<p class="payout-name">Payout on win</p>
+														<p class="payout-value">19.7</p>
+													</li>
+													<hr>
+													<li class="clearfix">
+														<p class="payout-name">Win chance</p>
+														<p class="payout-value">50%</p>
+													</li>
+													<hr>
+													<li class="clearfix">
+														<p class="payout-name">Multiplier</p>
+														<p class="payout-value">1.97</p>
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-4">
+												<p id="best-amount">Best Amount</p>
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="100" name="amount">
+													<div class="input-group-append">
+														<span class="input-group-text">ETH</span>
+													</div>
+												</div>
+												<div class="btn-group">
+													<button type="button" class="btn btn-primary amount-btn">x2</button>
+													<button type="button" class="btn btn-primary amount-btn">1/2</button>
+													<button type="button" class="btn btn-primary amount-btn">Min</button>
+													<button type="button" class="btn btn-primary amount-btn">Max</button>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<p class="best-amount2">ETH Balance (Switch to other token)</p>
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="100" name="amount">
+													<div class="input-group-append">
+														<span class="input-group-text">ETH</span>
+													</div>
+												</div>
+												<button id="roll-btn" type="button" class="btn btn-primary shadow-animate-pink"></button>
+											</div>
+											<script type="text/javascript" src="styles/custom.js"></script>
+											<script src="styles/lightbutton.js"></script>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-5 col-lg-12 diceContainerRight">
+								<div class="dicecontentRight">
+									<a class="questionIcon" href="#"><img src="styles/images/ctn-conten-icon7.png"></a>
+									<p class="titleCenter">Wager WarZ</p>
+									<p><span>Countdown: 00:37:52</span></p>
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Player</th>
+												<th>Total Played</th>
+												<th>Prize</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="playerName playerNameOne"><span><img src="styles/images/golden_crown.png"></span>Lvl. 95 GeniusMoney</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td class="playerName"><span><img src="styles/images/silver_crown.png"></span>Lvl. 95 CryptoKlizo</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td class="playerName"><span><img src="styles/images/bronze_crown.png"></span>Lvl. 95 CryptoKlizo</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td class="playerName"><span>4</span>Lvl. 95 CryptoKlizo</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td class="playerName"><span>5</span>Lvl. 95 CryptoKlizo</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td class="playerName"><span>6</span>Lvl. 95 CryptoKlizo</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td class="playerName"><span>7</span>Lvl. 95 CryptoKlizo</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td class="playerName"><span>8</span>Lvl. 95 CryptoKlizo</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td class="playerName"><span>9</span>Lvl. 95 CryptoKlizo</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td class="playerName"><span>10</span>Lvl. 95 CryptoKlizo</td>
+												<td class="payOutValue">414,281,124.00 ETH</td>
+												<td class="payOutValue">281,124.00 ETH</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="diceBetsContainer">
+							<a class="questionIcon" href="#"><img src="styles/images/ctn-conten-icon7.png"></a>
+							<div id="dicebetsHeader">
+								<ul class="nav nav-tabs card-header-tabs dice-bets-part1" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active show borderDicebets1" data-toggle="tab" href="#dicebets1" aria-selected="true">My Bets</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " data-toggle="tab" href="#dicebets2" aria-selected="false">All Bets</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#dicebets3" aria-selected="false">High Rollers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link borderDicebets4" data-toggle="tab" href="#dicebets4" aria-selected="false">Rare Wins</a>
+									</li>
+								</ul>
+							</div>
+							<div id="diceBetsBody">
+								<div class="tab-content">
+									<div class="tab-pane  ctntable-part active" id="dicebets1">
+										<table class="table table-striped">
+											<tr>
+												<th>player</th>
+												<th class="tabledisplayNone1">Prediction</th>
+												<th class="tabledisplayNone2">Prediction</th>
+												<th class="tabledisplayNone3">Bets</th>
+												<th class="tabledisplayNone4">Payout</th>
+											</tr>
+											<tr>
+												<td><span>1</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>2</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>3</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>4</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>5</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>6</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>7</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>8</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>9</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>10</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>11</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>12</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>13</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>14</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>15</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>16</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>17</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>18</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>18</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>20</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+										</table>
+									</div>
+									<div class="tab-pane ctntable-part " id="dicebets2">
+										<table class="table table-striped">
+											<tr>
+												<th>player</th>
+												<th class="tabledisplayNone1">Prediction</th>
+												<th class="tabledisplayNone2">Prediction</th>
+												<th class="tabledisplayNone3">Bets</th>
+												<th class="tabledisplayNone4">Payout</th>
+											</tr>
+											<tr>
+												<td><span>1</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>2</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>3</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>4</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>5</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>6</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>7</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>8</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>9</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>10</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>11</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>12</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>13</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>14</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>15</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>16</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>17</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>18</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>18</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>20</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+										</table>
+									</div>
+									<div class="tab-pane ctntable-part" id="dicebets3">
+										<table class="table table-striped">
+											<tr>
+												<th>player</th>
+												<th class="tabledisplayNone1">Prediction</th>
+												<th class="tabledisplayNone2">Prediction</th>
+												<th class="tabledisplayNone3">Bets</th>
+												<th class="tabledisplayNone4">Payout</th>
+											</tr>
+											<tr>
+												<td><span>1</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>2</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>3</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>4</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>5</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>6</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>7</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>8</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>9</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>10</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>11</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>12</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>13</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>14</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>15</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>16</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>17</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>18</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>18</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>20</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+										</table>
+									</div>
+									<div class="tab-pane ctntable-part" id="dicebets4">
+										<table class="table table-striped">
+											<tr>
+												<th>player</th>
+												<th class="tabledisplayNone1">Prediction</th>
+												<th class="tabledisplayNone2">Prediction</th>
+												<th class="tabledisplayNone3">Bets</th>
+												<th class="tabledisplayNone4">Payout</th>
+											</tr>
+											<tr>
+												<td><span>1</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>2</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>3</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>4</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>5</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>6</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>7</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>8</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>9</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>10</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>11</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>12</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>13</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>14</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>15</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>16</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>17</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 90</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>18</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>18</span>Lvl. 99 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Over 11</td>
+												<td class="tableColor tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+											<tr>
+												<td><span>20</span>Lvl. 95 InTheCrowd</td>
+												<td class="tableColor tabledisplayNone1">Under 99</td>
+												<td class="tableColor tableColorRed tabledisplayNone2">90</td>
+												<td class="tableColor tabledisplayNone3">414,281,124.00 ETH</td>
+												<td class="tableColor tabledisplayNone4">414,281,124.00 ETH</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<p>If you reside in a location where lottery, gambling, or betting over the internet is illegal, please do not click on anything related to these activities on this site.  You must be 21 years of age to click on any gambling related items even if it is legal to do so in your location.  Recognising that the laws and regulations involving online gaming are different everywhere, players are advised to check with the laws that exist within their own jurisdiction or region to ascertain the legality of the activities which are covered.
+						</p>
+						<p>
+						The games provided by FOMOBANKING are based on blockchain, fair, and transparency.  When you start playing these games, please take not that online gambling and lottery is an entertainment vehicle and that it carries with it a certain degree of financial risk.  Players should be aware of these risks and govern themselves accordingly.</p>
+						<div id="subscribe">
+							<input type="text" name="email" placeholder="Your email">
+							<input type="button" name="subscribe" value="Subscribe">
+						</div>
+						<p>© 2019 FOMOBANKING. All Rights Reserved. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div tabledisplayNone>
+</body>
+</html>

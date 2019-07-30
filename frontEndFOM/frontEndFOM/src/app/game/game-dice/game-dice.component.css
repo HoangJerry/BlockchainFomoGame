@@ -1,0 +1,263 @@
+.textAnimationWin {
+    color: #2ee2b5;
+    font-size: 25px;
+    position: absolute;
+    z-index: 1000;
+    font-weight: 800;
+    display: none;
+}
+
+.lose {
+    color: #ff5454;
+}
+
+.runAnimation {
+    display: block;
+    animation: slide-up 4s;
+}
+
+#dice .dicecontentRight .table tbody tr td.payOutValue p {
+    text-align: right;
+}
+
+.input-group-text-res {
+    width: 100%;
+    height: 44px;
+    margin-top: 3px;
+}
+
+#luckyText h1 {
+  cursor: default;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+#luckyText h1 span {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+}
+
+#luckyText .runAnimationPending{
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+}
+
+#luckyText h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+#luckyText h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+#luckyText h1 span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+#luckyText h1 span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+#luckyText h1 span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+#luckyText h1 span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+#luckyText h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+#luckyText h1 span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+#luckyText h1 span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+#luckyText h1 span:nth-child(11) {
+  -webkit-animation-delay: 0.5s;
+}
+
+#luckyText h1 span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+}
+
+#luckyText h1 span:nth-child(13) {
+  -webkit-animation-delay: 0.7s;
+}
+
+#luckyText h1 span:nth-child(14) {
+  -webkit-animation-delay: 0.8s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+    100% {
+        top: -5px;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+}
+
+@media (max-width: 450px) {
+    .ctntable-part .table tr th {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 600;
+        padding: 10px 8px;
+        vertical-align: middle;
+    }
+    .ctntable-part .table tr td {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 10px 8px;
+    }
+    .ctntable-part .table .tabledisplayNone2 {
+        width: 15%;
+    }
+    #roll-game-body .input-group-res {
+        position: relative;
+        width: 49%;
+        float: left;
+        margin-right: 1%;
+    }
+    #dice #roll-btn {
+        width: 49%;
+        float: left;
+        margin-left: 1%;
+        margin: 0;
+    }
+    .input-group-text-res {
+        width: 100%;
+        height: 50px;
+        margin-top: 0;
+        font-weight: 700;
+        border-left: -1px;
+    }
+    #dice #roll-game-body ul li .payout-name {
+        display: block;
+        float: left;
+        font-size: 14px;
+        padding: 4px 0;
+    }
+    #dice #roll-game-body ul li .payout-value {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2ee2ba;
+    }
+    #dice #roll-game-body {
+        background-color: #1d2224;
+        padding: 0 15px;
+        text-align: center;
+        color: #ffffff;
+        padding-bottom: 20px;
+    }
+    #dice #roll-game-body ul {
+        margin-top: 15px;
+    }
+    #dice #roll-game-body ul hr {
+        border: 0;
+        border-top: 1px solid #3b4449;
+        margin: 2px 0;
+    }
+    #dice .btn-group {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 6px;
+    }
+    #dice #roll-direct-btn {
+        max-width: 370px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .float-left {
+        float: none!important;
+        text-align: center;
+    }
+    .float-right {
+        float: none!important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .ctntable-part .table tr th {
+        font-size: 12px;
+        color: #fff;
+        font-weight: 600;
+        padding: 10px 8px;
+        vertical-align: middle;
+    }
+    .ctntable-part .table tr td {
+        font-size: 10px;
+        font-weight: 500;
+        padding: 8px 0;
+    }
+    .ctntable-part .table .tabledisplayNone2 {
+        width: 15%;
+    }
+    #dice #roll-game-body ul li .payout-name {
+        display: block;
+        float: left;
+        font-size: 12px;
+        padding: 4px 0;
+    }
+    #dice #roll-under-btn {
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ctntable-part .table tr th {
+        font-size: 10px;
+        color: #fff;
+        font-weight: 600;
+        padding: 8px 4px;
+        vertical-align: middle;
+    }
+    .ctntable-part .table tr td {
+        font-size: 10px;
+        font-weight: 500;
+        padding: 8px 1px;
+    }
+    .ctntable-part .table .tabledisplayNone2 {
+        width: 15%;
+    }
+    #dice #roll-game-body ul li .payout-name {
+        display: block;
+        float: left;
+        font-size: 11px;
+        padding: 4px 0;
+    }
+    #dice #roll-game-body ul li .payout-value {
+        font-size: 17px;
+        font-weight: bold;
+        color: #2ee2ba;
+    }
+}

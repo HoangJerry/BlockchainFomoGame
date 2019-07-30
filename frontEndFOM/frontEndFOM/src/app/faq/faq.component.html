@@ -1,0 +1,25 @@
+<div class="container" style=" padding-top: 50px">
+    <div class="list-fqas-page">
+        <h4 class="title"> FAQs </h4>
+        <div id="introduction" *ngFor="let faq of faqList">
+            <label class="sub-title">{{faq.title}}</label>
+            <div id="accordion">
+                <div class="card custom-card" *ngFor="let question of faq.faqs; let i=index">
+                    <div class="card-header custom-card-header" (click)="showing=question._id">
+                        <h5 class="mb-0">
+                            <label class="btn btn-link" >
+                               {{i+1}}. {{question.question}}
+                            </label>
+                        </h5>
+                    </div>
+
+                    <div class="collapse" [ngbCollapse]="showing != question._id">
+                        <div class="card-body custom-card-body">
+                            {{question.answer}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

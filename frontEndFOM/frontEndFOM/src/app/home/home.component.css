@@ -1,0 +1,362 @@
+
+
+#referralList li .referralRight>a:hover {
+    opacity: 0.6;
+}
+
+#referralList li .referralRight>a:active {
+    color: #fff;
+    box-sizing: border-box;
+    border: 3px solid #1cc09b;
+    margin-right: -2px;
+    transition: border 0.1s, margin-right 0.1s;
+}
+
+#multiplierText {
+    font-size: 23px;
+    color: #fff;
+    margin-right: 7px;
+    margin-top: 15px;
+}
+
+#multiplierNumber {
+    color: #70e3bb;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.buyticket a {
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.buyticket div #buyTicketHeader {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    line-height: 56px;
+}
+
+#nextRound {
+    color: #fff;
+}
+
+
+/* #chest1 {
+    background-size: 76px;
+} */
+
+
+/* None arrow at input number */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contentBottom>div>div>a {
+    text-decoration: none;
+}
+
+.contentBottom>div>div>a>h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 10px 0;
+    /*background-color: #252b2e;*/
+    position: relative;
+    width: 100%;
+    background: linear-gradient(135deg, transparent 10px, #ff3f90 0) top left, linear-gradient(225deg, transparent 10px, #ff3f90 0) top right, linear-gradient(315deg, transparent 10px, #ff3f90 0) bottom right, linear-gradient(45deg, transparent 10px, #ff3f90 0) bottom left;
+    /*Neu muon border toan bo*/
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#ff5ade, #ff5ade), linear-gradient(#ff5ade, #ff5ade), linear-gradient(#ff5ade, #ff5ade), linear-gradient(#ff5ade, #ff5ade), linear-gradient(to bottom right, transparent calc(50% - 2px), #ff5ade calc(50% - 2px), #ff5ade calc(50% + 2px), #ff3f90 calc(50% + 2px)), linear-gradient(to bottom left, transparent calc(50% - 2px), #ff5ade calc(50% - 2px), #ff5ade calc(50% + 2px), #ff3f90 calc(50% + 2px)), linear-gradient(to top right, transparent calc(50% - 2px), #ff5ade calc(50% - 2px), #ff5ade calc(50% + 2px), #ff3f90 calc(50% + 2px)), linear-gradient(to top left, transparent calc(50% - 2px), #ff5ade calc(50% - 2px), #ff5ade calc(50% + 2px), #ff3f90 calc(50% + 2px)), linear-gradient(#ff3f90, #ff3f90), linear-gradient(#ff3f90, #ff3f90), linear-gradient(#ff3f90, #ff3f90), linear-gradient(#ff3f90, #ff3f90);
+    background-size: 4px calc(100% - 30px), 4px calc(100% - 30px), calc(100% - 30px) 4px, calc(100% - 30px) 4px, /*Cac goc*/
+    15px 15px, 15px 15px, 15px 15px, 15px 15px, /*Tap nen*/
+    calc(100% - 30px) 60%, calc(100% - 30px) 60%, 60% calc(100% - 30px), 60% calc(100% - 30px);
+    background-position: left center, right center, top center, bottom center, top left, top right, bottom left, bottom right, center 100%, center 0%, left center, right center;
+}
+
+.centerChildent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#levelBody p {
+    color: #fff;
+    font-weight: 700;
+}
+
+#MyRegister .modal-dialog .modal-content .modal-footer button:hover {
+    background-size: 4px calc(100% - 30px), 4px calc(100% - 30px), calc(100% - 30px) 4px, calc(100% - 30px) 4px, /*Cac goc*/
+    15px 15px, 15px 15px, 15px 15px, 15px 15px, /*Tap nen*/
+    calc(100% - 27px) 60%, calc(100% - 27px) 60%, 60% calc(100% - 27px), 60% calc(100% - 27px);
+    transform: scale(1.1);
+}
+
+
+/*light button*/
+
+@keyframes shadow-pulse-orange {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 84, 84, 1);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes shadow-pulse-pink {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 63, 144, 1);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes shadow-pulse-green {
+    0% {
+        box-shadow: 0 0 0 0px rgba(17, 137, 110, 1);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+.shadow-animate-orange {
+    animation: shadow-pulse-orange 1s infinite;
+}
+
+.shadow-animate-green {
+    animation: shadow-pulse-green 1s infinite;
+}
+
+.contentBottom>div>div {
+    border-radius: 22px;
+}
+
+.shadow-animate-pink {
+    animation: shadow-pulse-pink 1s infinite;
+}
+
+
+/*end light button*/
+
+
+/*progress bar*/
+
+.progress {
+    background-color: transparent;
+}
+
+.ctn-body-from .progress .progress-bar {
+    background-color: #ff3f90;
+    border: 2px solid #ff5ade;
+}
+
+.ctn-body-from {
+    position: relative;
+}
+
+.ctn-body-from span {
+    position: absolute;
+    top: 0;
+}
+
+.brightness:hover {
+    box-shadow: 0 0px 12px 6px rgb(233, 146, 27);
+}
+
+#buyTicketHeader {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: slide-up 8.5s infinite;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    10% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    35% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+#modalNextRound .modal-header {
+    position: relative;
+}
+
+#modalNextRound .modal-header img {
+    position: absolute;
+    top: -45px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 110px;
+}
+
+#modalNextRound #roundBotRightHeader>p {
+    padding-top: 40px;
+    margin-bottom: 15px;
+}
+
+.my-popover {
+    background-color: #151b1f;
+    color: #fff;
+    border: 1px solid #ff9f59;
+    padding: 10px;
+}
+
+.my-popover .arrow {
+    display: none;
+}
+
+.my-popover .popover-body {
+    color: #fff;
+    text-align: justify;
+}
+
+hr {
+    border-top: 2px solid #3b4449;
+}
+
+#incomeList li p.incomeValue {
+    color: #2ee2ba;
+}
+
+.forSmartPhone {
+    display: none;
+}
+
+.buyticket-row {
+    overflow: hidden;
+    height: 60px;
+}
+.ctn-banner-multipRight{
+    display: none;
+}
+.ctn-banner-multip{
+    width: 30%;
+    float: left;
+    padding-top: 15px;
+    text-align: center;
+}
+.ctn-banner-lockLeft{
+    width: 70%;
+    float: left;
+    text-align: center;
+}
+@media (max-width: 1330px) {
+    .contentRoundTop div p span{
+        font-size: 36px;
+    }
+    #multiplierText {
+        font-size: 20px;
+    }
+
+    #multiplierNumber {
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 1300px) {
+    .buyticket div #buyTicketHeader {
+        font-size: 20px;
+        line-height: 25px;
+        /* padding: 20px 0; */
+    }
+    .buyticket-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .contentRoundTop div p span{
+        font-size: 33px;
+    }
+}
+@media (max-width: 1160px) {
+    .buyticket div #buyTicketHeader {
+        font-size: 20px;
+        line-height: 25px;
+        /* padding: 20px 0; */
+    }
+    .contentRoundTop div p span{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 991px) {
+     .contentRoundTop div p span{
+        font-size: 27px;
+    }
+    .buyticket div #buyTicketHeader {
+        font-size: 17px;
+        line-height: 20px;
+        /* padding: 20px 0; */
+
+    }
+    .ctn-banner-multipleft{
+        display: none;
+    }
+    .ctn-banner-multipRight{
+        display: inline-block;
+        width: 100%;
+        padding-top: 0;
+    }
+    .ctn-banner-lockLeft{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .buyticket-row {
+        height: auto;
+        display: unset;
+        flex-wrap: wrap;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .forSmartPhone {
+        font-size: 20px;
+        font-weight: 800;
+        color: #ffffff;
+        text-align: center;
+        display: inline-block;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    #kingOfKey h2 {
+        font-size: 20px;
+    }
+}

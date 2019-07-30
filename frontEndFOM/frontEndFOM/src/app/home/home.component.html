@@ -1,0 +1,578 @@
+<div class="parentContentRight">
+    <div id="round1Top">
+        <p>{{currentRound==0?'Zero Round':'Round #'+currentRound}}</p>
+    </div>
+    <div class="contentRoundTop row">
+        <div class="col-md-5 col-sm-6 col-xs-12">
+            <p><span id="key1Span">{{ticketSum | thousandDisplay}}</span><span>/{{ticketSumAllRound | thousandDisplay}}</span></p>
+            <p><span id="key2Span">{{totalEthRoundSpend | ethDisplay}}</span><span>/{{totalEthAllRound | ethDisplay}} ETH</span></p>
+        </div>
+        <hr class="hr-display">
+        <div class="col-md-7 col-sm-6 col-xs-12">
+            <div class="ctn-banner-multip ctn-banner-multipleft">
+                <p><span id="multiplierText">Winning Multiplier</span><span id="multiplierNumber">x{{winningMultiplier}}</span></p>
+            </div>
+            <div class="ctn-banner-lockLeft">
+                <p *ngIf="clockNextRound_show!=undefined"><span id="nextRound">Next round</span></p>
+                <p *ngIf="clockNextRound_show!=undefined"><span id="clock1Span">{{clockNextRound_show }}</span></p>
+                <p *ngIf="clock1_show!='EXPIRED'&&clock1_show!=undefined&&clockNextRound_show==undefined"><span id="clock1Span">{{clock1_show}}</span></p>
+                <p *ngIf="clock2_show!='EXPIRED'&&clock2_show!=undefined&&clockNextRound_show==undefined"><span id="clock2Span">{{clock2_show}}</span></p>
+            </div>
+            <div class="ctn-banner-multip ctn-banner-multipRight">
+                <p><span id="multiplierText">Winning Multiplier</span><span id="multiplierNumber">x{{winningMultiplier}}</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- End contenrRoundTop -->
+    <div class="buyticket">
+        <div class="buyticket-row row">
+            <div class="col-md-2">
+                <p id="x1">x1</p>
+                <p class="forSmartPhone">Buy ticket immediately at Zero Round to receive up to 650% your balance</p>
+            </div>
+            <div class="col-md-10 d-none d-md-block">
+                <a routerLink="" (click)="onClickScrollBuyTicket()">
+                    <p id="buyTicketHeader">{{textAnimation}}</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- <div class="col-md-12 buyticket-row">
+            <div class="col-md-2">
+                <p id="x1">x1</p>
+                <p class="forSmartPhone">Buy ticket immediately at Zero Round to receive up to 650% your balance</p>
+            </div>
+            <div class="col-md-10">
+                <a routerLink="" (click)="onClickScrollBuyTicket()">
+                    <p id="buyTicketHeader">{{textAnimation}}</p>
+                </a>
+            </div>
+        </div> -->
+    </div>
+
+    <h1>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+            <span class="wrap"></span>
+        </a>
+    </h1>
+    <!-- End buyticket -->
+    <h1 id="round1Mid">{{currentRound==0?'Zero Round':'Round #'+currentRound}}</h1>
+    <div class="contentRoundMid row">
+
+        <div class="col-lg-8 col-md-12">
+            <div id="round1Left">
+                <div class="clearfix round1Row brightness">
+                    <div class="round-mid-left chest" id="chest1">
+                        <h1 id="megaChest">Diamond Chest</h1>
+                    </div>
+                    <div class="round-mid-right">
+                        <h1>{{totalEthRound*0.5 | ethDisplay}} ETH</h1>
+                        <p><img src="assets/images/ctn-conten-icon5.png">{{totalEthRound*0.5*coverUSDT | usdDisplay}} USDT</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix round1Row brightness">
+                    <div class="round-mid-left chest" id="chest2">
+                        <h1 id="grandChest">Ruby Chest</h1>
+                    </div>
+                    <div class="round-mid-right">
+                        <h1>{{totalEthRound*0.2 | ethDisplay}} ETH</h1>
+                        <p><img src="assets/images/ctn-conten-icon5.png">{{totalEthRound*0.2*coverUSDT | usdDisplay}} USDT</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix round1Row brightness">
+                    <div class="round-mid-left chest" id="chest3">
+                        <h1>Gold Chest</h1>
+                    </div>
+                    <div class="round-mid-right">
+                        <h1>{{totalEthRound*0.05 | ethDisplay}} ETH</h1>
+                        <p><img src="assets/images/ctn-conten-icon5.png">{{totalEthRound*0.05*coverUSDT | usdDisplay}} USDT</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix round1Row brightness">
+                    <div class="round-mid-left chest" id="chest4">
+                        <h1>Silver Chest</h1>
+                    </div>
+                    <div class="round-mid-right">
+                        <h1>{{totalEthRound*0.04 | ethDisplay}} ETH</h1>
+                        <p><img src="assets/images/ctn-conten-icon5.png">{{totalEthRound*0.04*coverUSDT | usdDisplay}} USDT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div id="kingOfKey" class="brightness">
+                <h1>KING OF KEY</h1>
+                <ng-template #pop1Content>
+                    CONGRATULATIONS! You are the last ticket buyer and possess the key to open our Ruby Chest. All of the treasure will belong to you after the clock turns 00.
+                </ng-template>
+                <a class="questionIcon" [style.top.px]="questionOver=='question1'?41:50" [style.right.px]="questionOver=='question1'?-1:8" routerLink="" [ngbPopover]="pop1Content" popoverClass="my-popover" placement="left" (click)="onMouseOver('question1')"><img src="assets/images/{{questionOver=='question1'?'ctn-conten-icon9.png':'ctn-conten-icon7.png'}}"></a>
+                <h2 title="{{lastBuy.address}}">{{lastBuy.username}}</h2>
+                <p>{{lastBuy.value | ethDisplay}} ETH</p>
+            </div>
+
+
+            <ng-template #pop2Content>
+                When the time is running out:<br><br> - Bravo!!! You are the owner of Gold Chest with being the top spending ETH to buy tickets<br><br> - Congratulations!!! The Silver Chest will belong to you, If you are the person who has the most ETH
+                sales of F1s buying tickets (each F1 does not take more than 1 ETH to calculate).
+            </ng-template>
+            <div id="masterKey" class="clearfix">
+                <a class="questionIcon" [style.top.px]="questionOver=='question2'?-1:8" [style.right.px]="questionOver=='question2'?-1:8" routerLink="" [ngbPopover]="pop2Content" (click)="onMouseOver('question2')" placement="left" popoverClass="my-popover"><img src="assets/images/{{questionOver=='question2'?'ctn-conten-icon9.png':'ctn-conten-icon7.png'}}"></a>
+                <div id="masterKeyHeader">
+                    <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link item-part1 active show" data-toggle="tab" href="#masterKeyTab" aria-selected="true">Master Key</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item-part2" data-toggle="tab" href="#f1KeyTab" aria-selected="false">Ultimate Ref</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane p-3 active" id="masterKeyTab">
+                        <ul id="masterKeyList" class="clearfix">
+                            <div *ngFor="let masterKey of masterKeyList ; let i = index">
+                                <hr *ngIf="i>1">
+                                <li class="clearfix" title="{{masterKey.address}}" *ngIf="i!=0">
+                                    <p class="keyName"><span><img *ngIf="i==1"  src="assets/images/ctn-conten-icon8.png"> </span>{{masterKey.username}}</p>
+                                    <p class="keyValue">{{masterKey.value | ethDisplay}} ETH</p>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-pane p-3" id="f1KeyTab">
+                        <ul id="masterKeyList" class="clearfix">
+                            <div *ngFor="let f1Key of f1KeyList; let i = index">
+                                <hr *ngIf="i>1">
+                                <li class="clearfix" title="{{f1Key.address}}" *ngIf="i!=0">
+                                    <p class="keyName"><span><img *ngIf="i==1" src="assets/images/ctn-conten-icon8.png"> </span>{{f1Key.username}}</p>
+                                    <p class="keyValue">{{f1Key.value | ethDisplay}} ETH</p>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contenrRoundMid -->
+    <div class="contentBottom row">
+        <div class="col-md-12">
+            <div class="container-fluid">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" id="resultModal" data-toggle="modal" data-target="#myModal" (click)="onClickShowResult()">Results</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <!-- Modal content-->
+                        <div class="modal-content" *ngIf="resultView!=undefined">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss=""><img src="assets/images/ctn-conten-icon7.png"></button> -->
+                                <h1 class="modal-title">Result</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="panel-group" id="accordion">
+                                    <div *ngFor="let result of resultView; let result_index = index" class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a (click)="(onClickShowHideRound(result_index))" data-toggle="collapse" data-parent="#accordion" href="#collapse{{result_index}}">Round #{{result.round_id}}</a>
+                                            </h4>
+                                        </div>
+                                        <!-- <div id="collapse{{result_index}}" class="panel-collapse collapse in {{result_index==0?'show':''}}"> -->
+                                        <div class="panel-collapse collapse in {{resultViewIndex[result_index]?'show':''}}">
+                                            <div class="panel-body">
+                                                <ul class="levelList">
+                                                    <li class="row">
+                                                        <div class="col-md-5 col-5">
+                                                            <p class="levelPlayer">Members</p>
+                                                        </div>
+                                                        <div class="col-md-4 col-4">
+                                                            <p class="levelVolume">Prize Category</p>
+                                                        </div>
+                                                        <div class="col-md-3 col-3">
+                                                            <p class="levelPayout">Payout</p>
+                                                        </div>
+                                                    </li>
+                                                    <hr>
+                                                    <li class="row" *ngFor="let winner of result.winnerInfo;let i = index">
+                                                        <div class="col-md-5 col-5">
+                                                            <p class="levelPlayer" title="{{winner.address}}"><span>{{i+1}}</span>{{winner.username}}</p>
+                                                        </div>
+                                                        <div class="col-md-4 col-4">
+                                                            <p class="levelVolume">{{winnerTagList[i]}}</p>
+                                                        </div>
+                                                        <div class="col-md-3 col-3">
+                                                            <p class="levelPayout">{{result.totalEth*winnerPercent[i]/100 | ethDisplay}} ETH</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a data-dismiss="modal">Hide Results</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div *ngIf="canDraw" class="shadow-animate-pink">
+                <a routerLink="" *ngIf="clockNextRound_show==undefined" (click)="onClickDrawNow()">
+                    <h1>Draw Now</h1>
+                </a>
+                <a routerLink="" *ngIf="clockNextRound_show!=undefined" (click)="onClickClaim()">
+                    <h1>Draw Now</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end contentButtom -->
+    <div class="contentRoundBot row">
+        <div class="col-md-6 col-xs-12">
+            <div class="Round-bot-Left clearfix">
+
+
+                <div id="roundBotLeftHeader">
+                    <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-toggle="tab" href="#buyTicketTab" aria-selected="true">Buy Ticket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#incomeTab" aria-selected="false">Income</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#referralTab" aria-selected="false">Referral</a>
+                        </li>
+                    </ul>
+                </div>
+                <ng-template #pop3Content>
+                    Swiftly buy one or more tickets to get a chance of receiving up to 500% from ""Instant Income"" and take an opportunity to win Four Treasure Chests.<br> - 30 seconds are added to the ""Green Watch"" when a ticket is purchased and no
+                    more than 24 hours.<br> - The Yellow Clock will start counting down, if the total prize of the chests in the current round is greater than the previous round. When either of those clocks runs out of time, Four Treasure Chests will
+                    open to the winners:<br> - Diamond Chest: Will be opened winners randomly selected (The first person receive 50% and equally 10% for each of the last 5 persion).<br> - Ruby Chest: Belong to the last ticket buyer before one of those
+                    clocks returns to 0.<br> - Gold Chest: Belong to the top ETH consumer for buying ticket when one of those clock return to 0.<br> - Silver Chest: Share to person with the largest total F1 sales when one of those clocks return to 0.<br>                    Whenever you buy a ticket, there always a chance for you. Join us and develop your own community, we offer you the smartest way to maximize your income.
+                </ng-template>
+                <div class="tab-content border-diagonal">
+                    <div class="tab-pane p-3 active" id="buyTicketTab">
+                        <a class="questionIcon-part1" [style.top.px]="questionOver=='question3'?1:10" [style.right.px]="questionOver=='question3'?1:10" routerLink="" [ngbPopover]='pop3Content' popoverClass="my-popover" (click)="onMouseOver('question3')" placement="left"><img src="assets/images/{{questionOver=='question3'?'ctn-conten-icon9.png':'ctn-conten-icon7.png'}}"></a>
+                        <div id="roundBotLeftBody">
+                            <h1>Buy Ticket</h1>
+                            <div class="roundBotLeftBodyTop">
+                                <div class="input-group">
+                                    <span class="input-group-addon input-addon-part1"><img src="assets/images/key-icon1.png"></span>
+                                    <input type="number" min="0" name="keyBuy" class="form-control" aria-label="Amount (to the nearest dollar)" [(ngModel)]="keyBuy" (keyup)="validateKeyBuy($event)">
+                                    <span class="input-group-addon input-addon-part2"> {{ticketPrice*keyBuy/ethWei}} ETH</span>
+                                </div>
+                            </div>
+                            <div class="roundBotLeftBodyBottom">
+                                <ul>
+                                    <li><a class="BodyBottom-part1" routerLink="" (click)="onAddMoreKey(1)">+ 1</a></li>
+                                    <li><a routerLink="" (click)="onAddMoreKey(2)">+ 2</a></li>
+                                    <li><a routerLink="" (click)="onAddMoreKey(5)">+ 5</a></li>
+                                    <li><a routerLink="" (click)="onAddMoreKey(50)">+ 50</a></li>
+                                    <li><a class="BodyBottom-part2" routerLink="" (click)="onAddMoreKey(500)">+ 500</a></li>
+                                </ul>
+                            </div>
+                            <div id="sendETHBackground">
+                                <div *ngIf="!isLogin">
+                                    <a *ngIf="clockNextRound_show==undefined&&!isLogin" class="shadow-animate-orange" routerLink="" data-toggle="modal" data-target="#MyRegister"><img src="assets/images/key-icon2.png">Send ETH</a>
+                                    <a *ngIf="clockNextRound_show!=undefined&&!isLogin" class="shadow-animate-orange" routerLink=""><img src="assets/images/key-icon2.png">Send ETH</a>
+                                </div>
+                                <div *ngIf="isLogin">
+                                    <a *ngIf="!canDraw&&clockNextRound_show==undefined" class="shadow-animate-orange" routerLink="" (click)="onClickBuyTicket()"><img src="assets/images/key-icon2.png">Send ETH</a>
+
+                                    <a *ngIf="!canDraw&&clockNextRound_show!=undefined" class="shadow-animate-orange" routerLink="" data-toggle="modal" data-target="#modalNextRound"><img src="assets/images/key-icon2.png">Send ETH</a>
+
+                                    <a *ngIf="canDraw" routerLink="" data-toggle="modal" class="shadow-animate-orange" data-target="#modalDraw"><img src="assets/images/key-icon2.png">Send ETH</a>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalNextRound" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content" style="border: 1px solid #2ee2ba;">
+                                            <div class="modal-header">
+                                                <!-- <h1 class="modal-title">Notification</h1> -->
+                                                <img src="assets/images/countdown.png" alt="">
+                                            </div>
+                                            <div class="modal-body">
+                                                <div *ngIf="clockNextRound_show!=undefined" id="roundBotRightHeader">
+                                                    <p>Countdown To {{currentRound==0?'Zero Round':'Round #'+currentRound}}</p>
+                                                    <div class="clock">
+                                                        <p class="clock1Span"><img src="assets/images/ctn-rou-icon3.png">{{clockNextRound_show}}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- modal -->
+                                <div class="modal fade" id="modalDraw" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title">Draw now</h1>
+                                            </div>
+                                            <div class="modal-body">
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p></p>
+                            <a routerLink="" (click)="onClickViewTicket()" class="btn btn-info btn-lg" data-toggle="collapse" data-target="#viewticketspart1">View Tickets</a>
+
+                            <div *ngIf="ticketView!=undefined && !ticketHide" class="ctn-tickets collapse " id="viewticketspart1">
+                                <div class="panel panel-default" *ngFor="let ticketByRound of ticketView; let i = index">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#tickets{{i}}">Round #{{ticketByRound.round_id}}</a>
+                                        </h4>
+                                    </div>
+                                    <div id="tickets{{i}}" class="panel-collapse collapse in show" *ngIf="ticketByRound.ticket!=undefined">
+                                        <div class="panel-body ctn-colorbackgrour">
+                                            <span *ngFor="let slot of ticketByRound.ticket | notUndefined">
+												<span *ngIf="slot!=undefined" style="color:#fff;">{{slot.from}}{{slot.to!=slot.from?'-'+slot.to:''}}, </span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ctn-tickets-btt">
+                                    <a (click)="onClickHideTicket()" data-toggle="collapse" id="viewticketspart1">Hide tickets</a>
+                                    <!-- <a data-dismiss="collapse">Hide Tickets</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ng-template #pop31Content>
+                        Instant Income: Buy ticket immediately and receive up to 500% of the investment from the following buyers in the current round and the next round. (You can withdraw ETH after the current round ENDS).<br> - 10 Levels Income: You
+                        can receive unlimited reward up to 10 levels via your referral link. The larger the system is, the higher your income will be.<br> - Chest Income: Earnings come from the reward of Four Treasure Chests.<br> - Dividend Income: Earnings
+                        come from the dividends every 2 weeks when you own a DAA token.<br> - Game Income: You will receive percentage from gaming volume of your system (Dice, Watch, Dual,...).<br> - Total Income: Your total ETH has been rewarded.<br>                        - Withdrawable Wallet: ETH amount that you can draw immediately from Smart Contract.
+                    </ng-template>
+                    <div class="tab-pane p-3" id="incomeTab">
+                        <a class="questionIcon-part1" [style.top.px]="questionOver=='question3'?1:10" [style.right.px]="questionOver=='question3'?1:10" routerLink="" [ngbPopover]='pop31Content' popoverClass="my-popover" (click)="onMouseOver('question3')"><img src="assets/images/{{questionOver=='question3'?'ctn-conten-icon9.png':'ctn-conten-icon7.png'}}"></a>
+                        <h1>FomoGame Income</h1>
+                        <ul id="incomeList">
+                            <li class="clearfix">
+                                <p class="incomeName">Instant Income</p>
+                                <p class="incomeValue">{{user.totalEarlyIncome | ethDisplay}} ETH</p>
+                            </li>
+                            <hr>
+                            <li class="clearfix">
+                                <p class="incomeName">10 Levels Income</p>
+                                <p class="incomeValue">{{user.ticketRefIncome | ethDisplay}} ETH</p>
+                            </li>
+                            <hr>
+                            <li class="clearfix">
+                                <p class="incomeName">Chest Income</p>
+                                <p class="incomeValue">{{user.citizenWinIncome | ethDisplay}} ETH</p>
+                            </li>
+                            <hr>
+                            <li class="clearfix">
+                                <p class="incomeName">Dividend Income</p>
+                                <p class="incomeValue">{{user.totalDividend | ethDisplay}} ETH</p>
+                            </li>
+                            <hr>
+                            <li class="clearfix">
+                                <p class="incomeName">Game Income</p>
+                                <p class="incomeValue">{{user.gameRefIncome | ethDisplay }} ETH</p>
+                            </li>
+                            <hr>
+                            <li class="clearfix">
+                                <p class="incomeName">Total Income</p>
+                                <p class="incomeValue">{{user.totalIncome | ethDisplay}} ETH</p>
+                            </li>
+                            <hr>
+                            <li class="clearfix">
+                                <p class="incomeName">Withdrawable Wallet</p>
+                                <p class="incomeValue">{{(user.totalIncome-user.citizenWinIncome-user.ethBackup+user.ethDeposit)| ethDisplay}} ETH</p>
+                            </li>
+                        </ul>
+                        <a routerLink="" class="withdraw shadow-animate-green" (click)="onClickWithdraw()">Withdraw</a>
+                    </div>
+                    <ng-template #pop32Content>
+                        You can share one of those referral links to your friends. Choose a link appropriate for your own security demand.
+                    </ng-template>
+                    <div class="tab-pane p-3" id="referralTab">
+                        <a class="questionIcon-part1" [style.top.px]="questionOver=='question3'?1:10" [style.right.px]="questionOver=='question3'?1:10" routerLink="" [ngbPopover]='pop32Content' popoverClass="my-popover" placement="left" (click)="onMouseOver('question3')"><img src="assets/images/{{questionOver=='question3'?'ctn-conten-icon9.png':'ctn-conten-icon7.png'}}"></a>
+                        <h1>Referral</h1>
+                        <ul id="referralList" *ngIf="user!=undefined">
+                            <li class="clearfix">
+                                <div class="referralLeft">
+                                    <p>Wallet Link</p>
+                                    <p class="d-none d-md-inline-block">https://fomo.dabanking.io</p>
+                                    <p class="d-md-inline-block">/{{account | shortDisplay}}</p>
+                                </div>
+                                <div class="referralRight">
+                                    <a routerLink="" (click)="onClickCopy('https://fomo.dabanking.io/'+account)">Copy</a>
+                                </div>
+                            </li>
+                            <hr>
+         <!--                    <li class="clearfix">
+                                <div class="referralLeft">
+                                    <p>Anonymous Link</p>
+                                    <p class="d-none d-md-inline-block">https://fomo.dabanking.io</p>
+                                    <p class="d-md-inline-block">/{{user.id}}</p>
+                                </div>
+                                <div class="referralRight">
+                                    <a routerLink="" (click)="onClickCopy('https://fomo.dabanking.io/'+user.id)">Copy</a>
+                                </div>
+                            </li>
+                            <hr> -->
+                            <li class="clearfix">
+                                <div class="referralLeft">
+                                    <!-- <p>Vanity Referral</p> -->
+                                    <p>Public Link</p>
+                                    <p class="d-none d-md-inline-block">https://fomo.dabanking.io</p>
+                                    <p class="d-md-inline-block">/{{user.username}}</p>
+                                </div>
+                                <div class="referralRight">
+                                    <a routerLink="" (click)="onClickCopy('https://fomo.dabanking.io/'+user.username)">Copy</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div class="Round-bot-right">
+                <div *ngIf="clockNextRound_show==undefined" id="roundBotRightHeader">
+                    <p>Current Round ends in:</p>
+                    <div class="clock">
+                        <p *ngIf="clock1_show!='EXPIRED'&&clock1_show!=undefined" class="clock1Span"><img src="assets/images/ctn-rou-icon3.png">{{clock1_show}}</p>
+                        <p *ngIf="clock2_show!='EXPIRED'&&clock2_show!=undefined" class="clock2Span"><img src="assets/images/ctn-rou-icon4.png">{{clock2_show}}</p>
+                    </div>
+                </div>
+                <div *ngIf="clockNextRound_show!=undefined" id="roundBotRightHeader">
+                    <p>Next round starts in:</p>
+                    <div class="clock">
+                        <p class="clock1Span"><img src="assets/images/ctn-rou-icon3.png">{{clockNextRound_show}}</p>
+                    </div>
+                </div>
+                <ng-template #pop4Content>
+                    Chest Volume: The total ETH is available in the current Four Treasure Chests.<br> - Your ticket: The total ticket you have purchased in the current round.<br> - Your ETH: The total ETH you have deposited
+                </ng-template>
+                <div id="roundBotRightbody">
+                    <a class="Round-bot-questionIcon" [style.top.px]="questionOver=='question4'?1:10" [style.right.px]="questionOver=='question4'?1:10" routerLink="" [ngbPopover]='pop4Content' popoverClass="my-popover" placement="left" (click)="onMouseOver('question4')"><img src="assets/images/{{questionOver=='question4'?'ctn-conten-icon9.png':'ctn-conten-icon7.png'}}"></a>
+                    <ul class="clearfix">
+                        <li class="clearfix">
+                            <div class="Round-bot-right-row-left">
+                                <p>Chest Volume</p>
+                            </div>
+                            <div class="Round-bot-right-row-right">
+                                <h1>{{totalEthRound | ethDisplay}} ETH</h1>
+                                <p>Last Round: {{totalEthPreviousRound | ethDisplay}} ETH</p>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="clearfix">
+                            <div class="Round-bot-right-row-left">
+                                <p>Your Ticket(s)</p>
+                            </div>
+                            <div class="Round-bot-right-row-right">
+                                <h1>{{user.currentRoundTicketSum | thousandDisplay}} <span><img src="assets/images/ctn-rou-icon1.png"></span></h1>
+                                <p>Total Market: {{ticketSum | thousandDisplay}} Tickets</p>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="clearfix">
+                            <div class="Round-bot-right-row-left">
+                                <p>Your ETH</p>
+                            </div>
+                            <div class="Round-bot-right-row-right">
+                                <h1>{{user.currentRoundTicketSpend | ethDisplay}} ETH</h1>
+                                <p>Total Market: {{totalEthRoundSpend | ethDisplay}} ETH</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contentRoundBot -->
+    <div class="contentLevel row" *ngIf="isLogin">
+        <div class="col-md-12">
+            <div id="levelHeader">
+                <ul class="nav nav-tabs card-header-tabs levelHeader-display-part1" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active show" data-toggle="tab" href="#team" aria-selected="true">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#level1" aria-selected="false">Level 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#level2" aria-selected="false">Level 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#level3" aria-selected="false">Level 3</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="levelBody">
+                <!-- <img class="questionIcon" src="assets/images/ctn-conten-icon7.png"> -->
+
+                <div class="tab-content">
+
+                    <div class="tab-pane p-3 ctntable-part active show" id="team">
+                        <div class="row text-center">
+                            <p class="col-12 col-sm-6">Member Count: <span style="padding-right: 30px">{{user.totalChild | thousandDisplay}}</span></p>
+                            <p class="col-12 col-sm-6"> Total Commision: <span>{{(user.ticketRefIncome+user.gameRefIncome) | ethDisplay}} ETH</span></p>
+                        </div>
+
+                    </div>
+                    <div *ngFor="let members of memberList; let i = index" class="tab-pane p-3 ctntable-part" id="level{{i+1}}">
+                        <div class="row text-center">
+                            <p class="col-12 col-sm-6">Member Count: <span style="padding-right: 30px">{{members.totalMember | thousandDisplay}}</span> </p>
+                            <p class="col-12 col-sm-6">Total Commision: <span>{{members.totalPaytout | ethDisplay}} ETH</span></p>
+                        </div>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Members</th>
+                                <th class="tabledisplayNone">Volume</th>
+                                <th>Commision</th>
+                            </tr>
+                            <tr *ngFor="let member of members.memberDetail | slice: (members.page-1) * 10 : (members.page-1) * 10 + 10;let j=index">
+                                <td title="{{member.address}}"><span>{{(members.page-1) * 10+j+1}}</span>{{member.username}}</td>
+                                <td class="tableColor tabledisplayNone">{{member.totalSpend | ethDisplay}} ETH</td>
+                                <td class="tableColor">{{member.payFor | ethDisplay}} ETH</td>
+                            </tr>
+                        </table>
+                        <ngb-pagination [collectionSize]="members.totalMember" [(page)]="members.page" class="d-flex justify-content-end"></ngb-pagination>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- end contentLevel -->
+    </div>
+    <div class="footer">
+        <!-- <p>If you reside in a location where lottery, gambling, or betting over the internet is illegal, please do not click on anything related to these activities on this site.  You must be 21 years of age to click on any gambling related items even if it is legal to do so in your location.  Recognising that the laws and regulations involving online gaming are different everywhere, players are advised to check with the laws that exist within their own jurisdiction or region to ascertain the legality of the activities which are covered.
+	</p>
+	<p>
+	The games provided by FOMOBANKING are based on blockchain, fair, and transparency.  When you start playing these games, please take not that online gambling and lottery is an entertainment vehicle and that it carries with it a certain degree of financial risk.  Players should be aware of these risks and govern themselves accordingly.</p> -->
+        <!-- <div id="subscribe">
+		<input type="text" name="email" placeholder="Your email">
+		<input type="button" name="subscribe" value="Subscribe">
+	</div> -->
+        <p>© 2019 DABANKING. All Rights Reserved. </p>
+    </div>

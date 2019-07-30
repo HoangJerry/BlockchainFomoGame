@@ -1,2 +1,0 @@
-# BlockchainFomoGame
-Blockchain, fomo, dab,
